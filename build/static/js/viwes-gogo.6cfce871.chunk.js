@@ -1,0 +1,2 @@
+(this["webpackJsonpgogo-react"]=this["webpackJsonpgogo-react"]||[]).push([[17],{330:function(e,a,t){"use strict";t.r(a);var l=t(1),n=t.n(l),r=t(75),c=n.a.lazy(()=>Promise.all([t.e(27),t.e(9)]).then(t.bind(null,256)));a.default=({match:e})=>n.a.createElement(l.Suspense,{fallback:n.a.createElement("div",{className:"loading"})},n.a.createElement(r.d,null,n.a.createElement(r.b,{path:"".concat(e.url),render:e=>n.a.createElement(c,e)}),n.a.createElement(r.a,{to:"/error"})))}}]);
+//# sourceMappingURL=viwes-gogo.6cfce871.chunk.js.map

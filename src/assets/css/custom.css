@@ -1,0 +1,11 @@
+.rt-th.rt-resizable-header{
+    width: 160px !important;    
+}
+
+.rt-tbody .rt-td{
+    width: 160px !important;    
+}
+
+.rt-tbody {
+    overflow: visible !important;
+}
