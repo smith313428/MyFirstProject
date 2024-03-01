@@ -2443,7 +2443,7 @@ const Algorithm = (props) => {
   const [lossLimit, setlossLimit] = useState(20000)
   const [profit, setProfit] = useState(200)
   const [invert, setInvert] = useState(500)
-  const [loss, setloss] = useState(200)
+  const [loss, setloss] = useState(500)
   const [selectionRange, setSelectionRange] = useState([{
     startDate: new Date(),
     endDate: new Date(),
@@ -4605,6 +4605,499 @@ const Algorithm = (props) => {
     console.log('shortLossIndex1:',shortLossIndex1, )
   }
 
+  
+  const calcAlgorithm4_5=()=>{
+    let i=0
+    let priceDatas=testData
+    let profitVolume=profit
+    let restartVolume=-loss
+    priceDatas=newDays[0]
+    let longStartPosition=0
+    let longCurPosition=0
+    let longDifference = 0
+    let longProfit = 0
+    let longProfit1 = 0
+    let longLoss = 0
+    let longLoss1 = 0
+    let longLoss2 = 0
+    let longEnable = true
+    let shortEnable = true
+    let isStartedLong = false
+    let shortStartPosition=0
+    let shortCurPosition=0
+    let shortDifference = 0
+    let shortProfit = 0
+    let shortProfit1 = 0
+    let shortLoss = 0
+    let shortLoss1 = 0
+    let shortLoss2 = 0
+    let isStartedShort = false
+    let dayTotal=0
+    let dayLongTotal=0
+    let dayShortTotal=0
+    let dayLongTotalArray=[]
+    let dayShortTotalArray=[]
+    let dayTotalArray=[]
+    let amount = unitAmount
+    let longAmount = unitAmount
+    let shortAmount = unitAmount
+    console.log('priceDatas:',priceDatas)
+    console.log('amount:',amount)
+    let feePercent = amountNumber
+    let longStartIndex =0
+    let longProfitIndex1 = 0
+    let longLossIndex1 = 0
+    let shortProfitIndex1 = 0
+    let shortLossIndex1 = 0
+    let shortStartIndex =0
+    let longProfitIndex2 = 0
+    let longLossIndex2 = 0
+    let longLossIndex3 = 0
+    let longLossIndex4= 0
+    let shortLossIndex2 = 0
+    let amountTemp = unitAmount
+    let takeLossAmount = unitAmount/5
+    let longTakePositions = []
+    let takedLongLoss = false
+    let differenceFromLongTakedPosition = 0
+    let shortTakePositions = []
+    let takedShortLoss = false
+    let differenceFromShortTakedPosition = 0
+    let shortLossIndex3 = 0
+
+    for (let priceData of priceDatas) {
+      if(longEnable){
+        if(!isStartedLong){
+          longStartPosition = priceData
+          longCurPosition = priceData
+          longLoss=longLoss - (feePercent/2)*(longAmount/priceData)
+          longStartIndex =longStartIndex+1
+          isStartedLong = true
+          takedLongLoss = false
+          longAmount = unitAmount
+          longTakePositions = []
+        }else{
+          
+          longDifference = priceData - longCurPosition
+          //차이가 profitVolume이상이면 익절하고 longCurPositoin을 갱신(long다시 시작)
+          if(longDifference>=profitVolume){
+            longProfit=longProfit+(longDifference)*(longAmount/priceData) - (feePercent/2)*(longAmount/priceData)
+            // console.log('longProfit===P1',i,longDifference,priceData,"+",longCurPosition,"=",longProfit.toFixed(0), amount.toFixed(0))
+            longProfitIndex1 = longProfitIndex1 +1
+            isStartedLong = false
+          }
+          else{
+            // console.log('priceData:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+            if (takedLongLoss){
+              differenceFromLongTakedPosition = priceData - longTakePositions[longTakePositions.length-1]
+              longLossIndex2 = longLossIndex2 +1
+              if (differenceFromLongTakedPosition<=-100) {
+                longTakePositions.pop()
+                if (longTakePositions.length == 0){
+                  takedLongLoss = false
+                }
+                longLossIndex3 = longLossIndex3 +1
+                longLoss=longLoss - (feePercent/2)*(takeLossAmount/priceData)
+                // longCurPosition = longCurPosition + Number((longDifference/5).toFixed(0))
+                longCurPosition = longCurPosition + Number((longDifference*(takeLossAmount/(longAmount+takeLossAmount))).toFixed(0))
+                longAmount = longAmount + takeLossAmount
+                // console.log('longProfit====P2:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+              }else if (differenceFromLongTakedPosition>=100){
+                longTakePositions.push(priceData)
+                longAmount = longAmount - takeLossAmount
+                longLoss=longLoss - (feePercent/2)*(takeLossAmount/priceData)
+                if (longAmount == 0){
+                  isStartedLong = false
+                }
+                // console.log('priceData====3:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+              }
+              if(longStartPosition < priceData){
+                longProfit=longProfit+(longDifference)*(longAmount/priceData)  - (feePercent/2)*(longAmount/priceData)
+                isStartedLong = false
+              }
+            }else{
+              if(longDifference<=restartVolume){
+                longTakePositions.push(priceData)
+                longAmount = longAmount - takeLossAmount
+                takedLongLoss = true
+                longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData)  - (feePercent/2)*(takeLossAmount/priceData)
+                // console.log('priceData====1:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+
+                
+                
+                // isStartedLong = false
+                // longLossIndex1 = longLossIndex1 +1
+              }
+            }
+          }
+        }
+      }
+
+
+      if(shortEnable){
+        if(!isStartedShort){
+          shortStartPosition = priceData
+          shortCurPosition = priceData
+          shortLoss=shortLoss - (feePercent/2)*(amount/priceData)
+          shortStartIndex =shortStartIndex +1
+          isStartedShort = true
+          takedShortLoss = false
+          shortAmount = unitAmount
+          shortTakePositions = []
+        }else{
+          shortDifference = shortCurPosition - priceData 
+
+          // //If the difference is greater than the profit volume (e.g. 100) get profit
+          // if(shortDifference>=profitVolume){
+          //   shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)
+          //   // console.log('shortProfit:',i,shortDifference,priceData,"+",shortCurPosition,"=",shortProfit)
+          //   isStartedShort = false
+          // }
+          // else if(shortDifference<=restartVolume){
+          //   // shortLoss=shortLoss+(shortDifference)*((shortAmount)/priceData)
+          //   isStartedShort = false
+          // }
+
+
+          //If the difference is greater than the profit volume (e.g. 100) get profit
+          if(shortDifference>=profitVolume){
+            shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)  - (feePercent/2)*(shortAmount/priceData)
+            // console.log('shortProfit:',i,shortDifference,priceData,"+",shortCurPosition,"=",shortProfit, shortAmount.toFixed(0))
+            shortProfitIndex1 = shortProfitIndex1 +1
+            isStartedShort = false
+          }
+          else {
+            // console.log('priceData:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+            if (takedShortLoss){
+              differenceFromShortTakedPosition = shortTakePositions[shortTakePositions.length-1] - priceData 
+              shortLossIndex2 = shortLossIndex2 +1
+              if (differenceFromShortTakedPosition<=-100) {
+                shortTakePositions.pop()
+                if (shortTakePositions.length == 0){
+                  takedShortLoss = false
+                }
+                shortLossIndex3 = shortLossIndex3 +1
+                shortLoss=shortLoss - (feePercent/2)*(takeLossAmount/priceData)
+                // shortCurPosition = shortCurPosition - Number((shortDifference/5).toFixed(0))
+                shortCurPosition = shortCurPosition - Number((shortDifference*(takeLossAmount/(shortAmount+takeLossAmount))).toFixed(0))
+                // console.log('priceData====2:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+                shortAmount = shortAmount + takeLossAmount
+              }else if (differenceFromShortTakedPosition>=100){
+                shortTakePositions.push(priceData)
+                shortAmount = shortAmount - takeLossAmount
+                shortLoss=shortLoss - (feePercent/2)*(takeLossAmount/priceData)
+                // console.log('priceData====3:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+                if (shortAmount == 0){
+                  isStartedShort = false
+                }
+              }
+              if(shortStartPosition > priceData){
+                shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)  - (feePercent/2)*(shortAmount/priceData)
+                isStartedShort = false
+              }
+            }else{
+              if(shortDifference<=restartVolume){
+                shortTakePositions.push(priceData)
+                shortAmount = shortAmount - takeLossAmount
+                takedShortLoss = true
+                shortLoss=shortLoss+(shortDifference)*((takeLossAmount)/priceData)  - (feePercent/2)*(takeLossAmount/priceData)
+                // console.log('priceData====1:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+              }
+            }
+          }
+        }
+      }
+
+         
+      dayTotal=(
+        longProfit+
+        longProfit1+
+        longLoss+
+        longLoss1+
+        longLoss2+
+        shortProfit+
+        shortProfit1+
+        shortLoss+
+        shortLoss1+
+        shortLoss2
+        )      
+      dayLongTotal=(longProfit+longProfit1+longLoss+longLoss1+longLoss2)
+      dayShortTotal=(shortProfit+shortProfit1+shortLoss+shortLoss1+shortLoss2)
+      let periodN=(24*(60/(5*period.value))).toFixed(0)
+      if(((i+2)%periodN)==0){
+        dayTotalArray.push(dayTotal.toFixed(0))
+        dayLongTotalArray.push(dayLongTotal.toFixed(0))
+        dayShortTotalArray.push(dayShortTotal.toFixed(0))
+      }
+      let seriesTmp=[
+        { name: "Total", data: dayTotalArray},
+        { name: "Long", data: dayLongTotalArray},
+        { name: "Short", data: dayShortTotalArray},
+      ]
+      setSeries(seriesTmp)
+      i = i + 1
+    }
+    console.log("amountTemp===",amountTemp)
+    // console.log('longProfit=====',unitAmount,longProfit.toFixed(0), longLoss.toFixed(0),(longProfit+ longLoss).toFixed(0), )
+    // console.log('shortProfit=====',unitAmount,shortProfit.toFixed(0), shortLoss.toFixed(0),(shortProfit+shortLoss).toFixed(0))
+    console.log('longProfit:',longProfit.toFixed(0), longProfit1.toFixed(0), )
+    console.log('longLoss:',longLoss.toFixed(0),longLoss1.toFixed(0),longLoss2.toFixed(0), )
+    // console.log('shortProfit:',shortProfit.toFixed(0), shortProfit1.toFixed(0) )
+    // console.log('shortLoss:',shortLoss.toFixed(0),shortLoss1.toFixed(0), shortLoss2.toFixed(0))
+    console.log('longProfitIndex:', longProfitIndex1, longProfitIndex2)
+    console.log('longLossIndex1:',longLossIndex1, )
+    console.log('longLossIndex2:',longLossIndex2,longLossIndex3,longLossIndex4)
+    // console.log('shortProfitIndex:', shortProfitIndex1, shortProfitIndex2)
+    // console.log('shortLossIndex1:',shortLossIndex1, )
+    // console.log('shortLossIndex2:',shortLossIndex2, shortHalfIndex1, shortHalfIndex2)
+  }
+
+  const calcAlgorithm4_6=()=>{
+    let i=0
+    let priceDatas=testData
+    let profitVolume=profit
+    let restartVolume=-loss
+    priceDatas=newDays[0]
+    let longStartPosition=0
+    let longCurPosition=0
+    let longDifference = 0
+    let longProfit = 0
+    let longProfit1 = 0
+    let longLoss = 0
+    let longLoss1 = 0
+    let longLoss2 = 0
+    let longEnable = true
+    let shortEnable = true
+    let isStartedLong = false
+    let shortStartPosition=0
+    let shortCurPosition=0
+    let shortDifference = 0
+    let shortProfit = 0
+    let shortProfit1 = 0
+    let shortLoss = 0
+    let shortLoss1 = 0
+    let shortLoss2 = 0
+    let isStartedShort = false
+    let dayTotal=0
+    let dayLongTotal=0
+    let dayShortTotal=0
+    let dayLongTotalArray=[]
+    let dayShortTotalArray=[]
+    let dayTotalArray=[]
+    let amount = unitAmount
+    let longAmount = unitAmount
+    let shortAmount = unitAmount
+    console.log('priceDatas:',priceDatas)
+    console.log('amount:',amount)
+    let feePercent = amountNumber
+    let longStartIndex =0
+    let longProfitIndex1 = 0
+    let longLossIndex1 = 0
+    let shortProfitIndex1 = 0
+    let shortLossIndex1 = 0
+    let shortStartIndex =0
+    let longProfitIndex2 = 0
+    let longLossIndex2 = 0
+    let longLossIndex3 = 0
+    let longLossIndex4= 0
+    let shortLossIndex2 = 0
+    let amountTemp = unitAmount
+    let takeLossAmount = unitAmount/5
+    let longTakePositions = []
+    let takedLongLoss = false
+    let differenceFromLongTakedPosition = 0
+    let shortTakePositions = []
+    let takedShortLoss = false
+    let differenceFromShortTakedPosition = 0
+    let shortLossIndex3 = 0
+
+    for (let priceData of priceDatas) {
+      if(longEnable){
+        if(!isStartedLong){
+          longStartPosition = priceData
+          longCurPosition = priceData
+          longLoss=longLoss - (feePercent/2)*(longAmount/priceData)
+          longStartIndex =longStartIndex+1
+          isStartedLong = true
+          takedLongLoss = false
+          longAmount = unitAmount
+          longTakePositions = []
+        }else{
+          
+          longDifference = priceData - longCurPosition
+          //차이가 profitVolume이상이면 익절하고 longCurPositoin을 갱신(long다시 시작)
+          if(longDifference>=profitVolume){
+            longProfit=longProfit+(longDifference)*(longAmount/priceData) - (feePercent/2)*(longAmount/priceData)
+            // console.log('longProfit===P1',i,longDifference,priceData,"+",longCurPosition,"=",longProfit.toFixed(0), amount.toFixed(0))
+            longProfitIndex1 = longProfitIndex1 +1
+            isStartedLong = false
+          }
+          else{
+            // console.log('priceData:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+            if (takedLongLoss){
+              differenceFromLongTakedPosition = priceData - longTakePositions[longTakePositions.length-1]
+              longLossIndex2 = longLossIndex2 +1
+              if (differenceFromLongTakedPosition<=-100) {
+                longTakePositions.pop()
+                if (longTakePositions.length == 0){
+                  takedLongLoss = false
+                }
+                longLossIndex3 = longLossIndex3 +1
+                longLoss=longLoss - (feePercent/2)*(takeLossAmount/priceData)
+                // longCurPosition = longCurPosition + Number((longDifference/5).toFixed(0))
+                longCurPosition = longCurPosition + Number((longDifference*(takeLossAmount/(longAmount+takeLossAmount))).toFixed(0))
+                longAmount = longAmount + takeLossAmount
+                // console.log('longProfit====P2:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+              }else if (differenceFromLongTakedPosition>=100){
+                longTakePositions.push(priceData)
+                longAmount = longAmount - takeLossAmount
+                longLoss=longLoss - (feePercent/2)*(takeLossAmount/priceData)
+                if (longAmount == 0){
+                  isStartedLong = false
+                }
+                // console.log('priceData====3:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+              }
+              if(longStartPosition < priceData){
+                longProfit=longProfit+(longDifference)*(longAmount/priceData)  - (feePercent/2)*(longAmount/priceData)
+                isStartedLong = false
+              }
+            }else{
+              if(longDifference<=restartVolume){
+                longTakePositions.push(priceData)
+                longAmount = longAmount - takeLossAmount
+                takedLongLoss = true
+                longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData)  - (feePercent/2)*(takeLossAmount/priceData)
+                // console.log('priceData====1:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+
+                
+                
+                // isStartedLong = false
+                // longLossIndex1 = longLossIndex1 +1
+              }
+            }
+          }
+        }
+      }
+
+
+      if(shortEnable){
+        if(!isStartedShort){
+          shortStartPosition = priceData
+          shortCurPosition = priceData
+          shortLoss=shortLoss - (feePercent/2)*(amount/priceData)
+          shortStartIndex =shortStartIndex +1
+          isStartedShort = true
+          takedShortLoss = false
+          shortAmount = unitAmount
+          shortTakePositions = []
+        }else{
+          shortDifference = shortCurPosition - priceData 
+
+          // //If the difference is greater than the profit volume (e.g. 100) get profit
+          // if(shortDifference>=profitVolume){
+          //   shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)
+          //   // console.log('shortProfit:',i,shortDifference,priceData,"+",shortCurPosition,"=",shortProfit)
+          //   isStartedShort = false
+          // }
+          // else if(shortDifference<=restartVolume){
+          //   // shortLoss=shortLoss+(shortDifference)*((shortAmount)/priceData)
+          //   isStartedShort = false
+          // }
+
+
+          //If the difference is greater than the profit volume (e.g. 100) get profit
+          if(shortDifference>=profitVolume){
+            shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)  - (feePercent/2)*(shortAmount/priceData)
+            // console.log('shortProfit:',i,shortDifference,priceData,"+",shortCurPosition,"=",shortProfit, shortAmount.toFixed(0))
+            shortProfitIndex1 = shortProfitIndex1 +1
+            isStartedShort = false
+          }
+          else {
+            // console.log('priceData:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+            if (takedShortLoss){
+              differenceFromShortTakedPosition = shortTakePositions[shortTakePositions.length-1] - priceData 
+              shortLossIndex2 = shortLossIndex2 +1
+              if (differenceFromShortTakedPosition<=-100) {
+                shortTakePositions.pop()
+                if (shortTakePositions.length == 0){
+                  takedShortLoss = false
+                }
+                shortLossIndex3 = shortLossIndex3 +1
+                shortLoss=shortLoss - (feePercent/2)*(takeLossAmount/priceData)
+                // shortCurPosition = shortCurPosition - Number((shortDifference/5).toFixed(0))
+                shortCurPosition = shortCurPosition - Number((shortDifference*(takeLossAmount/(shortAmount+takeLossAmount))).toFixed(0))
+                // console.log('priceData====2:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+                shortAmount = shortAmount + takeLossAmount
+              }else if (differenceFromShortTakedPosition>=100){
+                shortTakePositions.push(priceData)
+                shortAmount = shortAmount - takeLossAmount
+                shortLoss=shortLoss - (feePercent/2)*(takeLossAmount/priceData)
+                // console.log('priceData====3:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+                if (shortAmount == 0){
+                  isStartedShort = false
+                }
+              }
+              if(shortStartPosition > priceData){
+                shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)  - (feePercent/2)*(shortAmount/priceData)
+                isStartedShort = false
+              }
+            }else{
+              if(shortDifference<=restartVolume){
+                shortTakePositions.push(priceData)
+                shortAmount = shortAmount - takeLossAmount
+                takedShortLoss = true
+                shortLoss=shortLoss+(shortDifference)*((takeLossAmount)/priceData)  - (feePercent/2)*(takeLossAmount/priceData)
+                // console.log('priceData====1:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+              }
+            }
+          }
+        }
+      }
+
+         
+      dayTotal=(
+        longProfit+
+        longProfit1+
+        longLoss+
+        longLoss1+
+        longLoss2+
+        shortProfit+
+        shortProfit1+
+        shortLoss+
+        shortLoss1+
+        shortLoss2
+        )      
+      dayLongTotal=(longProfit+longProfit1+longLoss+longLoss1+longLoss2)
+      dayShortTotal=(shortProfit+shortProfit1+shortLoss+shortLoss1+shortLoss2)
+      let periodN=(24*(60/(5*period.value))).toFixed(0)
+      if(((i+2)%periodN)==0){
+        dayTotalArray.push(dayTotal.toFixed(0))
+        dayLongTotalArray.push(dayLongTotal.toFixed(0))
+        dayShortTotalArray.push(dayShortTotal.toFixed(0))
+      }
+      let seriesTmp=[
+        { name: "Total", data: dayTotalArray},
+        { name: "Long", data: dayLongTotalArray},
+        { name: "Short", data: dayShortTotalArray},
+      ]
+      setSeries(seriesTmp)
+      i = i + 1
+    }
+    console.log("amountTemp===",amountTemp)
+    // console.log('longProfit=====',unitAmount,longProfit.toFixed(0), longLoss.toFixed(0),(longProfit+ longLoss).toFixed(0), )
+    // console.log('shortProfit=====',unitAmount,shortProfit.toFixed(0), shortLoss.toFixed(0),(shortProfit+shortLoss).toFixed(0))
+    console.log('longProfit:',longProfit.toFixed(0), longProfit1.toFixed(0), )
+    console.log('longLoss:',longLoss.toFixed(0),longLoss1.toFixed(0),longLoss2.toFixed(0), )
+    // console.log('shortProfit:',shortProfit.toFixed(0), shortProfit1.toFixed(0) )
+    // console.log('shortLoss:',shortLoss.toFixed(0),shortLoss1.toFixed(0), shortLoss2.toFixed(0))
+    console.log('longProfitIndex:', longProfitIndex1, longProfitIndex2)
+    console.log('longLossIndex1:',longLossIndex1, )
+    console.log('longLossIndex2:',longLossIndex2,longLossIndex3,longLossIndex4)
+    // console.log('shortProfitIndex:', shortProfitIndex1, shortProfitIndex2)
+    // console.log('shortLossIndex1:',shortLossIndex1, )
+    // console.log('shortLossIndex2:',shortLossIndex2, shortHalfIndex1, shortHalfIndex2)
+  }
+
   const onChangeValue=(value, type)=> {
     console.log('value, type:',value, type)
     if(type=='unitAmount'){
@@ -4708,7 +5201,7 @@ const Algorithm = (props) => {
         </Button>
         <Button
           style={{ width: '70px', height: '28px', padding: '0px',marginLeft:'20px' }}
-          onClick={calcAlgorithm4_4}
+          onClick={calcAlgorithm4_5}
           color={"primary"}
           size="sm"
           className="top-right-button"
@@ -4717,7 +5210,7 @@ const Algorithm = (props) => {
         </Button>
         <Button
           style={{ width: '70px', height: '28px', padding: '0px',marginLeft:'20px' }}
-          onClick={calcAlgorithm4_3}
+          onClick={calcAlgorithm4_6}
           color={"primary"}
           size="sm"
           className="top-right-button"
