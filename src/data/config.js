@@ -16,6 +16,8 @@ export const email= {
   GitHub: "smith313428/mith313428, smith313428@gmail.com/mith313428",
   GitHub : "reafe123 / rcb198014 , smith313428/mith313428, 12435-reafe/rcb198014 ",
   Bitbucket : "reafe198014outlook.com/rcb198014",
+  Bitbucket : "smith313428@gmail.com / mith313428",
+  Bitbucket : "shailesh.tech195@gmail.com / mith313428   (shailesh195 // mith313428) // ATBBX57Yv6NzLKScdwK8RgHvkhab0C660AA3 : pass",
   Gitlab : " polarislee1984/ qwer12341!A (rotation, roomres)",
 
   Bybit : " smith313428@gmail.com/Rcb198014",
@@ -25,7 +27,7 @@ export const email= {
 
   Apple_ID : "Smith313104@gmail.com // Mith313104",
   Figma : " smith313428@gmaial.com // mith313428 ",
-  
+
   GitHub : " test",
   GitHub : " test",
   GitHub : " test",
