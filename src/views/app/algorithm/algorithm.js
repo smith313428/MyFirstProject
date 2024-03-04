@@ -1152,6 +1152,103 @@ import {
   data_23_12_31_5m,
   
 } from "../../../data/prices2023";
+import {
+  
+  data_24_01_01_5m, 
+  data_24_01_02_5m, 
+  data_24_01_03_5m, 
+  data_24_01_04_5m, 
+  data_24_01_05_5m, 
+  data_24_01_06_5m, 
+  data_24_01_07_5m, 
+  data_24_01_08_5m, 
+  data_24_01_09_5m, 
+  data_24_01_10_5m, 
+  data_24_01_11_5m, 
+  data_24_01_12_5m, 
+  data_24_01_13_5m, 
+  data_24_01_14_5m, 
+  data_24_01_15_5m, 
+  data_24_01_16_5m, 
+  data_24_01_17_5m, 
+  data_24_01_18_5m, 
+  data_24_01_19_5m, 
+  data_24_01_20_5m, 
+  data_24_01_21_5m, 
+  data_24_01_22_5m, 
+  data_24_01_23_5m, 
+  data_24_01_24_5m, 
+  data_24_01_25_5m, 
+  data_24_01_26_5m, 
+  data_24_01_27_5m, 
+  data_24_01_28_5m, 
+  data_24_01_29_5m, 
+  data_24_01_30_5m,
+  data_24_01_31_5m,
+
+  data_24_02_01_5m, 
+  data_24_02_02_5m, 
+  data_24_02_03_5m, 
+  data_24_02_04_5m, 
+  data_24_02_05_5m, 
+  data_24_02_06_5m, 
+  data_24_02_07_5m, 
+  data_24_02_08_5m, 
+  data_24_02_09_5m, 
+  data_24_02_10_5m, 
+  data_24_02_11_5m, 
+  data_24_02_12_5m, 
+  data_24_02_13_5m, 
+  data_24_02_14_5m, 
+  data_24_02_15_5m, 
+  data_24_02_16_5m, 
+  data_24_02_17_5m, 
+  data_24_02_18_5m, 
+  data_24_02_19_5m, 
+  data_24_02_20_5m, 
+  data_24_02_21_5m, 
+  data_24_02_22_5m, 
+  data_24_02_23_5m, 
+  data_24_02_24_5m, 
+  data_24_02_25_5m, 
+  data_24_02_26_5m, 
+  data_24_02_27_5m, 
+  data_24_02_28_5m, 
+
+  data_24_03_01_5m, 
+  data_24_03_02_5m, 
+  data_24_03_03_5m, 
+  data_24_03_04_5m, 
+  data_24_03_05_5m, 
+  data_24_03_06_5m, 
+  data_24_03_07_5m, 
+  data_24_03_08_5m, 
+  data_24_03_09_5m, 
+  data_24_03_10_5m, 
+  data_24_03_11_5m, 
+  data_24_03_12_5m, 
+  data_24_03_13_5m, 
+  data_24_03_14_5m, 
+  data_24_03_15_5m, 
+  data_24_03_16_5m, 
+  data_24_03_17_5m, 
+  data_24_03_18_5m, 
+  data_24_03_19_5m, 
+  data_24_03_20_5m, 
+  data_24_03_21_5m, 
+  data_24_03_22_5m, 
+  data_24_03_23_5m, 
+  data_24_03_24_5m, 
+  data_24_03_25_5m, 
+  data_24_03_26_5m, 
+  data_24_03_27_5m, 
+  data_24_03_28_5m, 
+  data_24_03_29_5m, 
+  data_24_03_30_5m,
+  data_24_03_31_5m,
+
+  
+} from "../../../data/prices2024";
 import { daysInWeek } from "date-fns";
 const dataTempOld=data_21_6_1_22_7_30
 const dayData=data_22_07_31_5m
@@ -2319,11 +2416,108 @@ const daysData_23_10_t=
   .concat(data_23_12_30_5m)
   .concat(data_23_12_31_5m)
 
+  const daysData_24_01_t=
+  data_24_01_01_5m
+  .concat(data_24_01_02_5m)
+  .concat(data_24_01_03_5m)
+  .concat(data_24_01_04_5m)
+  .concat(data_24_01_05_5m)
+  .concat(data_24_01_06_5m)
+  .concat(data_24_01_07_5m)
+  .concat(data_24_01_08_5m)
+  .concat(data_24_01_09_5m)
+  .concat(data_24_01_10_5m)
+  .concat(data_24_01_11_5m)
+  .concat(data_24_01_12_5m)
+  .concat(data_24_01_13_5m)
+  .concat(data_24_01_14_5m)
+  .concat(data_24_01_15_5m)
+  .concat(data_24_01_16_5m)
+  .concat(data_24_01_17_5m)
+  .concat(data_24_01_18_5m)
+  .concat(data_24_01_19_5m)
+  .concat(data_24_01_20_5m)
+  .concat(data_24_01_21_5m)
+  .concat(data_24_01_22_5m)
+  .concat(data_24_01_23_5m)
+  .concat(data_24_01_24_5m)
+  .concat(data_24_01_25_5m)
+  .concat(data_24_01_26_5m)
+  .concat(data_24_01_27_5m)
+  .concat(data_24_01_28_5m)
+  .concat(data_24_01_29_5m)
+  .concat(data_24_01_30_5m)
+  .concat(data_24_01_31_5m)
+
+const daysData_24_02_t=
+  data_24_02_01_5m
+  .concat(data_24_02_02_5m)
+  .concat(data_24_02_03_5m)
+  .concat(data_24_02_04_5m)
+  .concat(data_24_02_05_5m)
+  .concat(data_24_02_06_5m)
+  .concat(data_24_02_07_5m)
+  .concat(data_24_02_08_5m)
+  .concat(data_24_02_09_5m)
+  .concat(data_24_02_10_5m)
+  .concat(data_24_02_11_5m)
+  .concat(data_24_02_12_5m)
+  .concat(data_24_02_13_5m)
+  .concat(data_24_02_14_5m)
+  .concat(data_24_02_15_5m)
+  .concat(data_24_02_16_5m)
+  .concat(data_24_02_17_5m)
+  .concat(data_24_02_18_5m)
+  .concat(data_24_02_19_5m)
+  .concat(data_24_02_20_5m)
+  .concat(data_24_02_21_5m)
+  .concat(data_24_02_22_5m)
+  .concat(data_24_02_23_5m)
+  .concat(data_24_02_24_5m)
+  .concat(data_24_02_25_5m)
+  .concat(data_24_02_26_5m)
+  .concat(data_24_02_27_5m)
+  .concat(data_24_02_28_5m)
+
+const daysData_24_03_t=
+  data_24_03_01_5m
+  .concat(data_24_03_02_5m)
+  .concat(data_24_03_03_5m)
+  .concat(data_24_03_04_5m)
+  .concat(data_24_03_05_5m)
+  .concat(data_24_03_06_5m)
+  .concat(data_24_03_07_5m)
+  .concat(data_24_03_08_5m)
+  .concat(data_24_03_09_5m)
+  .concat(data_24_03_10_5m)
+  .concat(data_24_03_11_5m)
+  .concat(data_24_03_12_5m)
+  .concat(data_24_03_13_5m)
+  .concat(data_24_03_14_5m)
+  .concat(data_24_03_15_5m)
+  .concat(data_24_03_16_5m)
+  .concat(data_24_03_17_5m)
+  .concat(data_24_03_18_5m)
+  .concat(data_24_03_19_5m)
+  .concat(data_24_03_20_5m)
+  .concat(data_24_03_21_5m)
+  .concat(data_24_03_22_5m)
+  .concat(data_24_03_23_5m)
+  .concat(data_24_03_24_5m)
+  .concat(data_24_03_25_5m)
+  .concat(data_24_03_26_5m)
+  .concat(data_24_03_27_5m)
+  .concat(data_24_03_28_5m)
+  .concat(data_24_03_29_5m)
+  .concat(data_24_03_30_5m)
+  .concat(data_24_03_31_5m)
+
 
   const daysData_2021_01_2023_12_5m_temp = 
   daysData_21_01_t.concat(daysData_21_02_t).concat(daysData_21_03_t).concat(daysData_21_04_t).concat(daysData_21_05_t).concat(daysData_21_06_t).concat(daysData_21_07_t).concat(daysData_21_08_t).concat(daysData_21_09_t).concat(daysData_21_10_t).concat(daysData_21_11_t).concat(daysData_21_12_t)
   .concat(daysData_22_01_t).concat(daysData_22_02_t).concat(daysData_22_03_t).concat(daysData_22_04_t).concat(daysData_22_05_t).concat(daysData_22_06_t).concat(daysData_22_07_t).concat(daysData_22_08_t).concat(daysData_22_09_t).concat(daysData_22_10_t).concat(daysData_22_11_t).concat(daysData_22_12_t)
   .concat(daysData_23_01_t).concat(daysData_23_02_t).concat(daysData_23_03_t).concat(daysData_23_04_t).concat(daysData_23_05_t).concat(daysData_23_06_t).concat(daysData_23_07_t).concat(daysData_23_08_t).concat(daysData_23_09_t).concat(daysData_23_10_t).concat(daysData_23_11_t).concat(daysData_23_12_t)
+  .concat(daysData_24_01_t).concat(daysData_24_02_t).concat(daysData_24_03_t)
 
   const daysData_2021_01_2023_12_5m = [daysData_2021_01_2023_12_5m_temp]
 
