@@ -9,6 +9,8 @@ export const email= {
   Bybit : " smith313428@gmail.com/Rcb198014",
   binance : "tianxiang528@outlook.com  // AKIA6JAPJ7AGIYQNRVKK",
   binance : "smith313104@gmail.com  // Admin!234@rcb  : Ok",
+  kuCoin : "smith313104@gmail.com  //Admin!234@rcb",
+  Bitmex : "smith313104@gmail.com  //Admin!234@qwe",
 
   gmail: "patrick.phong196@gmail.com   // mith313428",
   gmail: "jacob.itdream@gmail.com/Frontend1! ",
