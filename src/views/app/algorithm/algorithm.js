@@ -2710,8 +2710,7 @@ const Algorithm = (props) => {
       }
     })
     newDays.push(newDaysRealTmp)
-    // console.log('newDays:',newDaysRealTmp)
-    // console.log('days:',days[0])
+
     setNewDays(newDays)
     newDays[0].map((item, idx) => {
       if((idx%(288*31))==0){
@@ -4816,7 +4815,7 @@ const Algorithm = (props) => {
     let longLoss1 = 0
     let longLoss2 = 0
     let longEnable = true
-    let shortEnable = true
+    let shortEnable = false
     let isStartedLong = false
     let shortStartPosition=0
     let shortCurPosition=0
@@ -4875,70 +4874,77 @@ const Algorithm = (props) => {
           
           longDifference = priceData - longCurPosition
           //차이가 profitVolume이상이면 익절하고 longCurPositoin을 갱신(long다시 시작)
+          if (longDifference<=restartVolume){
+            shortEnable = true
+          }
           if(longDifference>=profitVolume){
             longProfit=longProfit+(longDifference)*(longAmount/priceData) - (feePercent/2)*(longAmount/priceData)
             // console.log('longProfit===P1',i,longDifference,priceData,"+",longCurPosition,"=",longProfit.toFixed(0), amount.toFixed(0))
             longProfitIndex1 = longProfitIndex1 +1
             isStartedLong = false
+            if (shortEnable){
+              longEnable = false
+            }
           }
           else{
 
-          //If the difference is greater than the profit volume (e.g. 100) get profit
-          if(longDifference>=profitVolume){
-            longProfit=longProfit+(longDifference)*(unitAmount/priceData)
-            console.log('longProfit:',i,longDifference,priceData,"+",longCurPosition,"=",longProfit)
-            isStartedLong = false
-          }
-          else if(longDifference<=restartVolume){
-            // longLoss=longLoss+(longDifference)*((unitAmount)/priceData)
-            isStartedLong = false
-          }
+          // //If the difference is greater than the profit volume (e.g. 100) get profit
+          // if(longDifference>=profitVolume){
+          //   longProfit=longProfit+(longDifference)*(unitAmount/priceData)
+          //   console.log('longProfit:',i,longDifference,priceData,"+",longCurPosition,"=",longProfit)
+          //   isStartedLong = false
+          // }
+          // else if(longDifference<=restartVolume){
+          //   // longLoss=longLoss+(longDifference)*((unitAmount)/priceData)
+          //   isStartedLong = false
+          // }
 
 
-            // // console.log('priceData:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
-            // if (takedLongLoss){
-            //   differenceFromLongTakedPosition = priceData - longTakePositions[longTakePositions.length-1]
-            //   if (differenceFromLongTakedPosition<=-reverseVolume) {
-            //     longTakePositions.pop()
-            //     if (longTakePositions.length == 0){
-            //       takedLongLoss = false
-            //     }
-            //     longLossIndex1 = longLossIndex1 +1
-            //     longLoss=longLoss - (feePercent/2)*(takeLossAmount/priceData)
-            //     // longCurPosition = longCurPosition + Number((longDifference/5).toFixed(0))
-            //     longCurPosition = longCurPosition + Number((longDifference*(takeLossAmount/(longAmount+takeLossAmount))).toFixed(0))
-            //     longAmount = longAmount + takeLossAmount
-            //     // console.log('longProfit====P2:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
-            //   }else if (differenceFromLongTakedPosition>=reverseVolume){
-            //     longTakePositions.push(priceData)
-            //     longAmount = longAmount - takeLossAmount
-            //     longLoss=longLoss - (feePercent/2)*(takeLossAmount/priceData)
-            //     longLossIndex2 = longLossIndex2 +1
-            //     if (longAmount == 0){
-            //       isStartedLong = false
-            //     }
-            //     // console.log('priceData====3:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
-            //   }
-            //   if(longStartPosition < priceData){
-            //     longProfit=longProfit+(longDifference)*(longAmount/priceData)  - (feePercent/2)*(longAmount/priceData)
-            //     longProfitIndex2 = longProfitIndex2 +1
-            //     isStartedLong = false
-            //   }
-            // }else{
-            //   if(longDifference<=restartVolume){
-            //     longTakePositions.push(priceData)
-            //     longAmount = longAmount - takeLossAmount
-            //     takedLongLoss = true
-            //     longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData)  - (feePercent/2)*(takeLossAmount/priceData)
-            //     longLossIndex3 = longLossIndex3 +1
-            //     // console.log('priceData====1:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+            // console.log('priceData:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+            if (takedLongLoss){
+              differenceFromLongTakedPosition = priceData - longTakePositions[longTakePositions.length-1]
+              if (differenceFromLongTakedPosition<=-reverseVolume) {
+                longTakePositions.pop()
+                if (longTakePositions.length == 0){
+                  takedLongLoss = false
+                }
+                longLossIndex1 = longLossIndex1 +1
+                longLoss=longLoss - (feePercent/2)*(takeLossAmount/priceData)
+                // longCurPosition = longCurPosition + Number((longDifference/5).toFixed(0))
+                longAmount = longAmount + takeLossAmount
+                longCurPosition = longCurPosition + Number((longDifference*(takeLossAmount/(longAmount))).toFixed(0))
+                // console.log('longProfit====P2:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+              }else if (differenceFromLongTakedPosition>=reverseVolume){
+                longTakePositions.push(priceData)
+                longAmount = longAmount - takeLossAmount
+                longLoss=longLoss - (feePercent/2)*(takeLossAmount/priceData)
+                longLossIndex2 = longLossIndex2 +1
+                if (longAmount == 0){
+                  isStartedLong = false
+                }
+                // console.log('priceData====3:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
+              }
+              if(longStartPosition < priceData){
+                longProfit=longProfit+(longDifference)*(longAmount/priceData)  - (feePercent/2)*(longAmount/priceData)
+                longProfitIndex2 = longProfitIndex2 +1
+                isStartedLong = false
+              }
+            }else{
+              if(longDifference<=restartVolume){
+                longTakePositions.push(priceData)
+                longAmount = longAmount - takeLossAmount
+                takedLongLoss = true
+                longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData)  - (feePercent/2)*(takeLossAmount/priceData)
+                longLossIndex3 = longLossIndex3 +1
+                // console.log('priceData====1:',i,longDifference, priceData, "+",longCurPosition, longAmount.toFixed(0))
 
                 
                 
-            //     // isStartedLong = false
-            //     // longLossIndex1 = longLossIndex1 +1
-            //   }
-            // }
+                // isStartedLong = false
+                // longLossIndex1 = longLossIndex1 +1
+              }
+            }
+
           }
         }
       }
@@ -4957,66 +4963,71 @@ const Algorithm = (props) => {
         }else{
           shortDifference = shortCurPosition - priceData 
 
-          //If the difference is greater than the profit volume (e.g. 100) get profit
-          if(shortDifference>=profitVolume){
-            shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)
-            // console.log('shortProfit:',i,shortDifference,priceData,"+",shortCurPosition,"=",shortProfit)
-            isStartedShort = false
-          }
-          else if(shortDifference<=restartVolume){
-            // shortLoss=shortLoss+(shortDifference)*((shortAmount)/priceData)
-            isStartedShort = false
-          }
-
-
           // //If the difference is greater than the profit volume (e.g. 100) get profit
           // if(shortDifference>=profitVolume){
-          //   shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)  - (feePercent/2)*(shortAmount/priceData)
-          //   // console.log('shortProfit:',i,shortDifference,priceData,"+",shortCurPosition,"=",shortProfit, shortAmount.toFixed(0))
-          //   shortProfitIndex1 = shortProfitIndex1 +1
+          //   shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)
+          //   // console.log('shortProfit:',i,shortDifference,priceData,"+",shortCurPosition,"=",shortProfit)
           //   isStartedShort = false
           // }
-          // else {
-          //   // console.log('priceData:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
-          //   if (takedShortLoss){
-          //     differenceFromShortTakedPosition = shortTakePositions[shortTakePositions.length-1] - priceData 
-          //     if (differenceFromShortTakedPosition<=-reverseVolume) {
-          //       shortTakePositions.pop()
-          //       if (shortTakePositions.length == 0){
-          //         takedShortLoss = false
-          //       }
-          //       shortLossIndex1 = shortLossIndex1 +1
-          //       shortLoss=shortLoss - (feePercent/2)*(takeLossAmount/priceData)
-          //       // shortCurPosition = shortCurPosition - Number((shortDifference/5).toFixed(0))
-          //       shortCurPosition = shortCurPosition - Number((shortDifference*(takeLossAmount/(shortAmount+takeLossAmount))).toFixed(0))
-          //       // console.log('priceData====2:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
-          //       shortAmount = shortAmount + takeLossAmount
-          //     }else if (differenceFromShortTakedPosition>=reverseVolume){
-          //       shortTakePositions.push(priceData)
-          //       shortAmount = shortAmount - takeLossAmount
-          //       shortLoss=shortLoss - (feePercent/2)*(takeLossAmount/priceData)
-          //       shortLossIndex2 = shortLossIndex2 +1
-          //       // console.log('priceData====3:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
-          //       if (shortAmount == 0){
-          //         isStartedShort = false
-          //       }
-          //     }
-          //     if(shortStartPosition > priceData){
-          //       shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)  - (feePercent/2)*(shortAmount/priceData)
-          //       shortProfitIndex2 = shortProfitIndex2 +1
-          //       isStartedShort = false
-          //     }
-          //   }else{
-          //     if(shortDifference<=restartVolume){
-          //       shortTakePositions.push(priceData)
-          //       shortAmount = shortAmount - takeLossAmount
-          //       takedShortLoss = true
-          //       shortLoss=shortLoss+(shortDifference)*((takeLossAmount)/priceData)  - (feePercent/2)*(takeLossAmount/priceData)
-          //       shortLossIndex3 = shortLossIndex3 +1
-          //       // console.log('priceData====1:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
-          //     }
-          //   }
+          // else if(shortDifference<=restartVolume){
+          //   // shortLoss=shortLoss+(shortDifference)*((shortAmount)/priceData)
+          //   isStartedShort = false
           // }
+          if (shortDifference<=restartVolume){
+            longEnable = true
+          }
+
+          //If the difference is greater than the profit volume (e.g. 100) get profit
+          if(shortDifference>=profitVolume){
+            shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)  - (feePercent/2)*(shortAmount/priceData)
+            // console.log('shortProfit:',i,shortDifference,priceData,"+",shortCurPosition,"=",shortProfit, shortAmount.toFixed(0))
+            shortProfitIndex1 = shortProfitIndex1 +1
+            isStartedShort = false
+            if (longEnable){
+              shortEnable = false
+            }
+          }
+          else {
+            // console.log('priceData:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+            if (takedShortLoss){
+              differenceFromShortTakedPosition = shortTakePositions[shortTakePositions.length-1] - priceData 
+              if (differenceFromShortTakedPosition<=-reverseVolume) {
+                shortTakePositions.pop()
+                if (shortTakePositions.length == 0){
+                  takedShortLoss = false
+                }
+                shortLossIndex1 = shortLossIndex1 +1
+                shortLoss=shortLoss - (feePercent/2)*(takeLossAmount/priceData)
+                // shortCurPosition = shortCurPosition - Number((shortDifference/5).toFixed(0))
+                shortCurPosition = shortCurPosition - Number((shortDifference*(takeLossAmount/(shortAmount+takeLossAmount))).toFixed(0))
+                // console.log('priceData====2:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+                shortAmount = shortAmount + takeLossAmount
+              }else if (differenceFromShortTakedPosition>=reverseVolume){
+                shortTakePositions.push(priceData)
+                shortAmount = shortAmount - takeLossAmount
+                shortLoss=shortLoss - (feePercent/2)*(takeLossAmount/priceData)
+                shortLossIndex2 = shortLossIndex2 +1
+                // console.log('priceData====3:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+                if (shortAmount == 0){
+                  isStartedShort = false
+                }
+              }
+              if(shortStartPosition > priceData){
+                shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)  - (feePercent/2)*(shortAmount/priceData)
+                shortProfitIndex2 = shortProfitIndex2 +1
+                isStartedShort = false
+              }
+            }else{
+              if(shortDifference<=restartVolume){
+                shortTakePositions.push(priceData)
+                shortAmount = shortAmount - takeLossAmount
+                takedShortLoss = true
+                shortLoss=shortLoss+(shortDifference)*((takeLossAmount)/priceData)  - (feePercent/2)*(takeLossAmount/priceData)
+                shortLossIndex3 = shortLossIndex3 +1
+                // console.log('priceData====1:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
+              }
+            }
+          }
         }
       }
 
@@ -5058,6 +5069,7 @@ const Algorithm = (props) => {
     console.log('shortLossIndex1:',shortLossIndex1, shortLossIndex2, shortLossIndex3)
   }
 
+  //completed algorithm
   const calcAlgorithm4_6=()=>{
     let i=0
     let priceDatas=testData
