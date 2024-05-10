@@ -40,5 +40,9 @@ export const email= {
   'live:buddyjam0' : 'ID Card, Driving License, Green Card, Passport',
   'live:cbc6048e7705e1b' : 'Stripe,USBank& Documents,SSN,wise,revolut'},
 
-  Astrill: 'dinuo9797@gmail.com // David20150812sanhaojie!!!  polarislee1984@outlook.com // ASf7695SF%DS(F'
+  Astrill: 'dinuo9797@gmail.com // David20150812sanhaojie!!!  polarislee1984@outlook.com // ASf7695SF%DS(F',
+
+  address : "126 Geylang East Ave 1, Singapore 381126",
+  name:"Wei Jie Tan(	First Name: Wei Jie Last Name: Tan)",
+  bb:"1983/3/16"
 }
