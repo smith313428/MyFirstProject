@@ -3,12 +3,16 @@ export const email= {
   gmail: "smith313104@gmail.com / mith313104!qwe",
   gmail: "shailesh.tech195@gmail.com   //   mith313428",
   Outlook: "reafe198014@outlook.com / rcb198014    : (outlook, skype)",
+  Outlook: "smith313104@outlook.com / mith313104",
+  Outlook: "patrick313104@outlook.com / mith313104",
   Outlook: "tianxiang528@outlook.com  / Admin!234@qwe  (PPassword1234!@#$) smith313428@gmail.com",
+
   GitHub: "smith313428/mith313428, smith313428@gmail.com/mith313428",
   Bitbucket : "shailesh.tech195@gmail.com / mith313428   (shailesh195 // mith313428) // ATBBX57Yv6NzLKScdwK8RgHvkhab0C660AA3 : pass",
   Bybit : " smith313428@gmail.com/Rcb198014",
   binance : "tianxiang528@outlook.com  // AKIA6JAPJ7AGIYQNRVKK",
-  binance : "smith313104@gmail.com  // Admin!234@rcb  : Ok",
+  binance : "smith313104@outlook.com  // Admin!234@rcb  : Ok",
+  binance : "patrick313104@outlook.com  // Admin!234@rcb  : Ok",
   kuCoin : "smith313104@gmail.com  //Admin!234@rcb",
   Bitmex : "smith313104@gmail.com  ///Admin!234@qwe",
 
