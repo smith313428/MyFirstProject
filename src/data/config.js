@@ -1,10 +1,12 @@
 export const email= {
   gmail: "smith313428@gmail.com / rcb198014 (chat.openai.com: gogool login) reafe198014@outlook.com",
-  gmail: "smith313104@gmail.com / mith313104!qwe",
-  gmail: "shailesh.tech195@gmail.com   //   mith313428",
+  gmail: "smith313104@gmail.com / mith313104!qwe, smith313104@outlook.com",
+  gmail: "shailesh.tech195@gmail.com   //   mith313428 , shailesh313104@outlook.com",
+  gmail: "patrick.phong196@gmail.com   // mith313428, patrick313104@outlook.com",
   Outlook: "reafe198014@outlook.com / rcb198014    : (outlook, skype)",
   Outlook: "smith313104@outlook.com / mith313104",
   Outlook: "patrick313104@outlook.com / mith313104",
+  Outlook: "shailesh313104@outlook.com / mith313104",
   Outlook: "tianxiang528@outlook.com  / Admin!234@qwe  (PPassword1234!@#$) smith313428@gmail.com",
 
   GitHub: "smith313428/mith313428, smith313428@gmail.com/mith313428",
@@ -18,7 +20,7 @@ export const email= {
 
   Jong : "live:ae105b8527b25a0f",
 
-  gmail: "patrick.phong196@gmail.com   // mith313428",
+ 
   gmail: "jacob.itdream@gmail.com/Frontend1! ",
   gmail: "steven.bestsolution@gmail.ocm / frontend",
 
