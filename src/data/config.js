@@ -7,7 +7,7 @@ export const email= {
   Outlook: "smith313104@outlook.com / mith313104",
   Outlook: "patrick313104@outlook.com / mith313104",
   Outlook: "shailesh313104@outlook.com / mith313104",
-  Outlook: "tianxiang528@outlook.com  / Admin!234@qwe  (PPassword1234!@#$) smith313428@gmail.com",
+  Outlook: "tianxiang528@outlook.com  / Admin!234@#$was  (PPassword1234!@#$) smith313428@gmail.com",
 
   GitHub: "smith313428/mith313428, smith313428@gmail.com/mith313428",
   Bitbucket : "shailesh.tech195@gmail.com / mith313428   (shailesh195 // mith313428) // ATBBX57Yv6NzLKScdwK8RgHvkhab0C660AA3 : pass",
