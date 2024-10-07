@@ -2635,9 +2635,9 @@ const Algorithm = (props) => {
   const [stopProfitVolume, setStopProfitVolume] = useState(500)
   const [priceVolume2, setPriceVolume2] = useState(300)
   const [lossLimit, setlossLimit] = useState(20000)
-  const [profit, setProfit] = useState(200)
+  const [profit, setProfit] = useState(200) //300 : 9
   const [invert, setInvert] = useState(100)
-  const [loss, setloss] = useState(500)
+  const [loss, setloss] = useState(500) //300 : 9
   const [selectionRange, setSelectionRange] = useState([{
     startDate: new Date(),
     endDate: new Date(),
