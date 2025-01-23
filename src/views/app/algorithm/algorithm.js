@@ -1247,12 +1247,298 @@ import {
   data_24_03_30_5m,
   data_24_03_31_5m,
 
-  
+  data_24_04_01_5m, 
+  data_24_04_02_5m, 
+  data_24_04_03_5m, 
+  data_24_04_04_5m, 
+  data_24_04_05_5m, 
+  data_24_04_06_5m, 
+  data_24_04_07_5m, 
+  data_24_04_08_5m, 
+  data_24_04_09_5m, 
+  data_24_04_10_5m, 
+  data_24_04_11_5m, 
+  data_24_04_12_5m, 
+  data_24_04_13_5m, 
+  data_24_04_14_5m, 
+  data_24_04_15_5m, 
+  data_24_04_16_5m, 
+  data_24_04_17_5m, 
+  data_24_04_18_5m, 
+  data_24_04_19_5m, 
+  data_24_04_20_5m, 
+  data_24_04_21_5m, 
+  data_24_04_22_5m, 
+  data_24_04_23_5m, 
+  data_24_04_24_5m, 
+  data_24_04_25_5m, 
+  data_24_04_26_5m, 
+  data_24_04_27_5m, 
+  data_24_04_28_5m, 
+  data_24_04_29_5m, 
+  data_24_04_30_5m,
+
+  data_24_05_01_5m, 
+  data_24_05_02_5m, 
+  data_24_05_03_5m, 
+  data_24_05_04_5m, 
+  data_24_05_05_5m, 
+  data_24_05_06_5m, 
+  data_24_05_07_5m, 
+  data_24_05_08_5m, 
+  data_24_05_09_5m, 
+  data_24_05_10_5m, 
+  data_24_05_11_5m, 
+  data_24_05_12_5m, 
+  data_24_05_13_5m, 
+  data_24_05_14_5m, 
+  data_24_05_15_5m, 
+  data_24_05_16_5m, 
+  data_24_05_17_5m, 
+  data_24_05_18_5m, 
+  data_24_05_19_5m, 
+  data_24_05_20_5m, 
+  data_24_05_21_5m, 
+  data_24_05_22_5m, 
+  data_24_05_23_5m, 
+  data_24_05_24_5m, 
+  data_24_05_25_5m, 
+  data_24_05_26_5m, 
+  data_24_05_27_5m, 
+  data_24_05_28_5m, 
+  data_24_05_29_5m, 
+  data_24_05_30_5m,
+  data_24_05_31_5m,
+
+  data_24_06_01_5m, 
+  data_24_06_02_5m, 
+  data_24_06_03_5m, 
+  data_24_06_04_5m, 
+  data_24_06_05_5m, 
+  data_24_06_06_5m, 
+  data_24_06_07_5m, 
+  data_24_06_08_5m, 
+  data_24_06_09_5m, 
+  data_24_06_10_5m, 
+  data_24_06_11_5m, 
+  data_24_06_12_5m, 
+  data_24_06_13_5m, 
+  data_24_06_14_5m, 
+  data_24_06_15_5m, 
+  data_24_06_16_5m, 
+  data_24_06_17_5m, 
+  data_24_06_18_5m, 
+  data_24_06_19_5m, 
+  data_24_06_20_5m, 
+  data_24_06_21_5m, 
+  data_24_06_22_5m, 
+  data_24_06_23_5m, 
+  data_24_06_24_5m, 
+  data_24_06_25_5m, 
+  data_24_06_26_5m, 
+  data_24_06_27_5m, 
+  data_24_06_28_5m, 
+  data_24_06_29_5m, 
+  data_24_06_30_5m,
+
+
+  data_24_07_01_5m, 
+  data_24_07_02_5m, 
+  data_24_07_03_5m, 
+  data_24_07_04_5m, 
+  data_24_07_05_5m, 
+  data_24_07_06_5m, 
+  data_24_07_07_5m, 
+  data_24_07_08_5m, 
+  data_24_07_09_5m, 
+  data_24_07_10_5m, 
+  data_24_07_11_5m, 
+  data_24_07_12_5m, 
+  data_24_07_13_5m, 
+  data_24_07_14_5m, 
+  data_24_07_15_5m, 
+  data_24_07_16_5m, 
+  data_24_07_17_5m, 
+  data_24_07_18_5m, 
+  data_24_07_19_5m, 
+  data_24_07_20_5m, 
+  data_24_07_21_5m, 
+  data_24_07_22_5m, 
+  data_24_07_23_5m, 
+  data_24_07_24_5m, 
+  data_24_07_25_5m, 
+  data_24_07_26_5m, 
+  data_24_07_27_5m, 
+  data_24_07_28_5m, 
+  data_24_07_29_5m, 
+  data_24_07_30_5m,
+  data_24_07_31_5m,
+
+
+  data_24_08_01_5m, 
+  data_24_08_02_5m, 
+  data_24_08_03_5m, 
+  data_24_08_04_5m, 
+  data_24_08_05_5m, 
+  data_24_08_06_5m, 
+  data_24_08_07_5m, 
+  data_24_08_08_5m, 
+  data_24_08_09_5m, 
+  data_24_08_10_5m, 
+  data_24_08_11_5m, 
+  data_24_08_12_5m, 
+  data_24_08_13_5m, 
+  data_24_08_14_5m, 
+  data_24_08_15_5m, 
+  data_24_08_16_5m, 
+  data_24_08_17_5m, 
+  data_24_08_18_5m, 
+  data_24_08_19_5m, 
+  data_24_08_20_5m, 
+  data_24_08_21_5m, 
+  data_24_08_22_5m, 
+  data_24_08_23_5m, 
+  data_24_08_24_5m, 
+  data_24_08_25_5m, 
+  data_24_08_26_5m, 
+  data_24_08_27_5m, 
+  data_24_08_28_5m, 
+  data_24_08_29_5m, 
+  data_24_08_30_5m,
+  data_24_08_31_5m,
+
+
+  data_24_09_01_5m, 
+  data_24_09_02_5m, 
+  data_24_09_03_5m, 
+  data_24_09_04_5m, 
+  data_24_09_05_5m, 
+  data_24_09_06_5m, 
+  data_24_09_07_5m, 
+  data_24_09_08_5m, 
+  data_24_09_09_5m, 
+  data_24_09_10_5m, 
+  data_24_09_11_5m, 
+  data_24_09_12_5m, 
+  data_24_09_13_5m, 
+  data_24_09_14_5m, 
+  data_24_09_15_5m, 
+  data_24_09_16_5m, 
+  data_24_09_17_5m, 
+  data_24_09_18_5m, 
+  data_24_09_19_5m, 
+  data_24_09_20_5m, 
+  data_24_09_21_5m, 
+  data_24_09_22_5m, 
+  data_24_09_23_5m, 
+  data_24_09_24_5m, 
+  data_24_09_25_5m, 
+  data_24_09_26_5m, 
+  data_24_09_27_5m, 
+  data_24_09_28_5m, 
+  data_24_09_29_5m, 
+  data_24_09_30_5m,
+
+
+  data_24_10_01_5m, 
+  data_24_10_02_5m, 
+  data_24_10_03_5m, 
+  data_24_10_04_5m, 
+  data_24_10_05_5m, 
+  data_24_10_06_5m, 
+  data_24_10_07_5m, 
+  data_24_10_08_5m, 
+  data_24_10_09_5m, 
+  data_24_10_10_5m, 
+  data_24_10_11_5m, 
+  data_24_10_12_5m, 
+  data_24_10_13_5m, 
+  data_24_10_14_5m, 
+  data_24_10_15_5m, 
+  data_24_10_16_5m, 
+  data_24_10_17_5m, 
+  data_24_10_18_5m, 
+  data_24_10_19_5m, 
+  data_24_10_20_5m, 
+  data_24_10_21_5m, 
+  data_24_10_22_5m, 
+  data_24_10_23_5m, 
+  data_24_10_24_5m, 
+  data_24_10_25_5m, 
+  data_24_10_26_5m, 
+  data_24_10_27_5m, 
+  data_24_10_28_5m, 
+  data_24_10_29_5m, 
+  data_24_10_30_5m,
+  data_24_10_31_5m,
+
+
+  data_24_11_01_5m, 
+  data_24_11_02_5m, 
+  data_24_11_03_5m, 
+  data_24_11_04_5m, 
+  data_24_11_05_5m, 
+  data_24_11_06_5m, 
+  data_24_11_07_5m, 
+  data_24_11_08_5m, 
+  data_24_11_09_5m, 
+  data_24_11_10_5m, 
+  data_24_11_11_5m, 
+  data_24_11_12_5m, 
+  data_24_11_13_5m, 
+  data_24_11_14_5m, 
+  data_24_11_15_5m, 
+  data_24_11_16_5m, 
+  data_24_11_17_5m, 
+  data_24_11_18_5m, 
+  data_24_11_19_5m, 
+  data_24_11_20_5m, 
+  data_24_11_21_5m, 
+  data_24_11_22_5m, 
+  data_24_11_23_5m, 
+  data_24_11_24_5m, 
+  data_24_11_25_5m, 
+  data_24_11_26_5m, 
+  data_24_11_27_5m, 
+  data_24_11_28_5m, 
+  data_24_11_29_5m, 
+  data_24_11_30_5m,
+
+
+  data_24_12_01_5m, 
+  data_24_12_02_5m, 
+  data_24_12_03_5m, 
+  data_24_12_04_5m, 
+  data_24_12_05_5m, 
+  data_24_12_06_5m, 
+  data_24_12_07_5m, 
+  data_24_12_08_5m, 
+  data_24_12_09_5m, 
+  data_24_12_10_5m, 
+  data_24_12_11_5m, 
+  data_24_12_12_5m, 
+  data_24_12_13_5m, 
+  data_24_12_14_5m, 
+  data_24_12_15_5m, 
+  data_24_12_16_5m, 
+  data_24_12_17_5m, 
+  data_24_12_18_5m, 
+  data_24_12_19_5m, 
+  data_24_12_20_5m, 
+  data_24_12_21_5m, 
+  data_24_12_22_5m, 
+  data_24_12_23_5m, 
+  data_24_12_24_5m, 
+  data_24_12_25_5m, 
+  data_24_12_26_5m, 
+  data_24_12_27_5m, 
+  data_24_12_28_5m, 
+  data_24_12_29_5m, 
+  data_24_12_30_5m,
+  data_24_12_31_5m
 } from "../../../data/prices2024";
-import { daysInWeek } from "date-fns";
-import { tr } from "date-fns/locale";
+
 const dataTempOld=data_21_6_1_22_7_30
-const dayData=data_22_07_31_5m
 
 const daysData_21_01_t=
   data_21_01_01_5m
@@ -2513,14 +2799,307 @@ const daysData_24_03_t=
   .concat(data_24_03_30_5m)
   .concat(data_24_03_31_5m)
 
+  const daysData_24_04_t=
+  data_24_04_01_5m
+  .concat(data_24_04_02_5m)
+  .concat(data_24_04_03_5m)
+  .concat(data_24_04_04_5m)
+  .concat(data_24_04_05_5m)
+  .concat(data_24_04_06_5m)
+  .concat(data_24_04_07_5m)
+  .concat(data_24_04_08_5m)
+  .concat(data_24_04_09_5m)
+  .concat(data_24_04_10_5m)
+  .concat(data_24_04_11_5m)
+  .concat(data_24_04_12_5m)
+  .concat(data_24_04_13_5m)
+  .concat(data_24_04_14_5m)
+  .concat(data_24_04_15_5m)
+  .concat(data_24_04_16_5m)
+  .concat(data_24_04_17_5m)
+  .concat(data_24_04_18_5m)
+  .concat(data_24_04_19_5m)
+  .concat(data_24_04_20_5m)
+  .concat(data_24_04_21_5m)
+  .concat(data_24_04_22_5m)
+  .concat(data_24_04_23_5m)
+  .concat(data_24_04_24_5m)
+  .concat(data_24_04_25_5m)
+  .concat(data_24_04_26_5m)
+  .concat(data_24_04_27_5m)
+  .concat(data_24_04_28_5m)
+  .concat(data_24_04_29_5m)
+  .concat(data_24_04_30_5m)
 
-  const daysData_2021_01_2023_12_5m_temp = 
+  const daysData_24_05_t=
+  data_24_05_01_5m
+  .concat(data_24_05_02_5m)
+  .concat(data_24_05_03_5m)
+  .concat(data_24_05_04_5m)
+  .concat(data_24_05_05_5m)
+  .concat(data_24_05_06_5m)
+  .concat(data_24_05_07_5m)
+  .concat(data_24_05_08_5m)
+  .concat(data_24_05_09_5m)
+  .concat(data_24_05_10_5m)
+  .concat(data_24_05_11_5m)
+  .concat(data_24_05_12_5m)
+  .concat(data_24_05_13_5m)
+  .concat(data_24_05_14_5m)
+  .concat(data_24_05_15_5m)
+  .concat(data_24_05_16_5m)
+  .concat(data_24_05_17_5m)
+  .concat(data_24_05_18_5m)
+  .concat(data_24_05_19_5m)
+  .concat(data_24_05_20_5m)
+  .concat(data_24_05_21_5m)
+  .concat(data_24_05_22_5m)
+  .concat(data_24_05_23_5m)
+  .concat(data_24_05_24_5m)
+  .concat(data_24_05_25_5m)
+  .concat(data_24_05_26_5m)
+  .concat(data_24_05_27_5m)
+  .concat(data_24_05_28_5m)
+  .concat(data_24_05_29_5m)
+  .concat(data_24_05_30_5m)
+  .concat(data_24_05_31_5m)
+
+  const daysData_24_06_t=
+  data_24_06_01_5m
+  .concat(data_24_06_02_5m)
+  .concat(data_24_06_03_5m)
+  .concat(data_24_06_04_5m)
+  .concat(data_24_06_05_5m)
+  .concat(data_24_06_06_5m)
+  .concat(data_24_06_07_5m)
+  .concat(data_24_06_08_5m)
+  .concat(data_24_06_09_5m)
+  .concat(data_24_06_10_5m)
+  .concat(data_24_06_11_5m)
+  .concat(data_24_06_12_5m)
+  .concat(data_24_06_13_5m)
+  .concat(data_24_06_14_5m)
+  .concat(data_24_06_15_5m)
+  .concat(data_24_06_16_5m)
+  .concat(data_24_06_17_5m)
+  .concat(data_24_06_18_5m)
+  .concat(data_24_06_19_5m)
+  .concat(data_24_06_20_5m)
+  .concat(data_24_06_21_5m)
+  .concat(data_24_06_22_5m)
+  .concat(data_24_06_23_5m)
+  .concat(data_24_06_24_5m)
+  .concat(data_24_06_25_5m)
+  .concat(data_24_06_26_5m)
+  .concat(data_24_06_27_5m)
+  .concat(data_24_06_28_5m)
+  .concat(data_24_06_29_5m)
+  .concat(data_24_06_30_5m)
+
+  const daysData_24_07_t=
+  data_24_07_01_5m
+  .concat(data_24_07_02_5m)
+  .concat(data_24_07_03_5m)
+  .concat(data_24_07_04_5m)
+  .concat(data_24_07_05_5m)
+  .concat(data_24_07_06_5m)
+  .concat(data_24_07_07_5m)
+  .concat(data_24_07_08_5m)
+  .concat(data_24_07_09_5m)
+  .concat(data_24_07_10_5m)
+  .concat(data_24_07_11_5m)
+  .concat(data_24_07_12_5m)
+  .concat(data_24_07_13_5m)
+  .concat(data_24_07_14_5m)
+  .concat(data_24_07_15_5m)
+  .concat(data_24_07_16_5m)
+  .concat(data_24_07_17_5m)
+  .concat(data_24_07_18_5m)
+  .concat(data_24_07_19_5m)
+  .concat(data_24_07_20_5m)
+  .concat(data_24_07_21_5m)
+  .concat(data_24_07_22_5m)
+  .concat(data_24_07_23_5m)
+  .concat(data_24_07_24_5m)
+  .concat(data_24_07_25_5m)
+  .concat(data_24_07_26_5m)
+  .concat(data_24_07_27_5m)
+  .concat(data_24_07_28_5m)
+  .concat(data_24_07_29_5m)
+  .concat(data_24_07_30_5m)
+  .concat(data_24_07_31_5m)
+
+  const daysData_24_08_t=
+  data_24_08_01_5m
+  .concat(data_24_08_02_5m)
+  .concat(data_24_08_03_5m)
+  .concat(data_24_08_04_5m)
+  .concat(data_24_08_05_5m)
+  .concat(data_24_08_06_5m)
+  .concat(data_24_08_07_5m)
+  .concat(data_24_08_08_5m)
+  .concat(data_24_08_09_5m)
+  .concat(data_24_08_10_5m)
+  .concat(data_24_08_11_5m)
+  .concat(data_24_08_12_5m)
+  .concat(data_24_08_13_5m)
+  .concat(data_24_08_14_5m)
+  .concat(data_24_08_15_5m)
+  .concat(data_24_08_16_5m)
+  .concat(data_24_08_17_5m)
+  .concat(data_24_08_18_5m)
+  .concat(data_24_08_19_5m)
+  .concat(data_24_08_20_5m)
+  .concat(data_24_08_21_5m)
+  .concat(data_24_08_22_5m)
+  .concat(data_24_08_23_5m)
+  .concat(data_24_08_24_5m)
+  .concat(data_24_08_25_5m)
+  .concat(data_24_08_26_5m)
+  .concat(data_24_08_27_5m)
+  .concat(data_24_08_28_5m)
+  .concat(data_24_08_29_5m)
+  .concat(data_24_08_30_5m)
+  .concat(data_24_08_31_5m)
+
+  const daysData_24_09_t=
+  data_24_09_01_5m
+  .concat(data_24_09_02_5m)
+  .concat(data_24_09_03_5m)
+  .concat(data_24_09_04_5m)
+  .concat(data_24_09_05_5m)
+  .concat(data_24_09_06_5m)
+  .concat(data_24_09_07_5m)
+  .concat(data_24_09_08_5m)
+  .concat(data_24_09_09_5m)
+  .concat(data_24_09_10_5m)
+  .concat(data_24_09_11_5m)
+  .concat(data_24_09_12_5m)
+  .concat(data_24_09_13_5m)
+  .concat(data_24_09_14_5m)
+  .concat(data_24_09_15_5m)
+  .concat(data_24_09_16_5m)
+  .concat(data_24_09_17_5m)
+  .concat(data_24_09_18_5m)
+  .concat(data_24_09_19_5m)
+  .concat(data_24_09_20_5m)
+  .concat(data_24_09_21_5m)
+  .concat(data_24_09_22_5m)
+  .concat(data_24_09_23_5m)
+  .concat(data_24_09_24_5m)
+  .concat(data_24_09_25_5m)
+  .concat(data_24_09_26_5m)
+  .concat(data_24_09_27_5m)
+  .concat(data_24_09_28_5m)
+  .concat(data_24_09_29_5m)
+  .concat(data_24_09_30_5m)
+
+  const daysData_24_10_t=
+  data_24_10_01_5m
+  .concat(data_24_10_02_5m)
+  .concat(data_24_10_03_5m)
+  .concat(data_24_10_04_5m)
+  .concat(data_24_10_05_5m)
+  .concat(data_24_10_06_5m)
+  .concat(data_24_10_07_5m)
+  .concat(data_24_10_08_5m)
+  .concat(data_24_10_09_5m)
+  .concat(data_24_10_10_5m)
+  .concat(data_24_10_11_5m)
+  .concat(data_24_10_12_5m)
+  .concat(data_24_10_13_5m)
+  .concat(data_24_10_14_5m)
+  .concat(data_24_10_15_5m)
+  .concat(data_24_10_16_5m)
+  .concat(data_24_10_17_5m)
+  .concat(data_24_10_18_5m)
+  .concat(data_24_10_19_5m)
+  .concat(data_24_10_20_5m)
+  .concat(data_24_10_21_5m)
+  .concat(data_24_10_22_5m)
+  .concat(data_24_10_23_5m)
+  .concat(data_24_10_24_5m)
+  .concat(data_24_10_25_5m)
+  .concat(data_24_10_26_5m)
+  .concat(data_24_10_27_5m)
+  .concat(data_24_10_28_5m)
+  .concat(data_24_10_29_5m)
+  .concat(data_24_10_30_5m)
+  .concat(data_24_10_31_5m)
+
+  const daysData_24_11_t=
+  data_24_11_01_5m
+  .concat(data_24_11_02_5m)
+  .concat(data_24_11_03_5m)
+  .concat(data_24_11_04_5m)
+  .concat(data_24_11_05_5m)
+  .concat(data_24_11_06_5m)
+  .concat(data_24_11_07_5m)
+  .concat(data_24_11_08_5m)
+  .concat(data_24_11_09_5m)
+  .concat(data_24_11_10_5m)
+  .concat(data_24_11_11_5m)
+  .concat(data_24_11_12_5m)
+  .concat(data_24_11_13_5m)
+  .concat(data_24_11_14_5m)
+  .concat(data_24_11_15_5m)
+  .concat(data_24_11_16_5m)
+  .concat(data_24_11_17_5m)
+  .concat(data_24_11_18_5m)
+  .concat(data_24_11_19_5m)
+  .concat(data_24_11_20_5m)
+  .concat(data_24_11_21_5m)
+  .concat(data_24_11_22_5m)
+  .concat(data_24_11_23_5m)
+  .concat(data_24_11_24_5m)
+  .concat(data_24_11_25_5m)
+  .concat(data_24_11_26_5m)
+  .concat(data_24_11_27_5m)
+  .concat(data_24_11_28_5m)
+  .concat(data_24_11_29_5m)
+  .concat(data_24_11_30_5m)
+
+  const daysData_24_12_t=
+  data_24_12_01_5m
+  .concat(data_24_12_02_5m)
+  .concat(data_24_12_03_5m)
+  .concat(data_24_12_04_5m)
+  .concat(data_24_12_05_5m)
+  .concat(data_24_12_06_5m)
+  .concat(data_24_12_07_5m)
+  .concat(data_24_12_08_5m)
+  .concat(data_24_12_09_5m)
+  .concat(data_24_12_10_5m)
+  .concat(data_24_12_11_5m)
+  .concat(data_24_12_12_5m)
+  .concat(data_24_12_13_5m)
+  .concat(data_24_12_14_5m)
+  .concat(data_24_12_15_5m)
+  .concat(data_24_12_16_5m)
+  .concat(data_24_12_17_5m)
+  .concat(data_24_12_18_5m)
+  .concat(data_24_12_19_5m)
+  .concat(data_24_12_20_5m)
+  .concat(data_24_12_21_5m)
+  .concat(data_24_12_22_5m)
+  .concat(data_24_12_23_5m)
+  .concat(data_24_12_24_5m)
+  .concat(data_24_12_25_5m)
+  .concat(data_24_12_26_5m)
+  .concat(data_24_12_27_5m)
+  .concat(data_24_12_28_5m)
+  .concat(data_24_12_29_5m)
+  .concat(data_24_12_30_5m)
+  .concat(data_24_12_31_5m)
+
+  
+  const daysData_2021_01_2024_12_5m_temp = 
   daysData_21_01_t.concat(daysData_21_02_t).concat(daysData_21_03_t).concat(daysData_21_04_t).concat(daysData_21_05_t).concat(daysData_21_06_t).concat(daysData_21_07_t).concat(daysData_21_08_t).concat(daysData_21_09_t).concat(daysData_21_10_t).concat(daysData_21_11_t).concat(daysData_21_12_t)
   .concat(daysData_22_01_t).concat(daysData_22_02_t).concat(daysData_22_03_t).concat(daysData_22_04_t).concat(daysData_22_05_t).concat(daysData_22_06_t).concat(daysData_22_07_t).concat(daysData_22_08_t).concat(daysData_22_09_t).concat(daysData_22_10_t).concat(daysData_22_11_t).concat(daysData_22_12_t)
   .concat(daysData_23_01_t).concat(daysData_23_02_t).concat(daysData_23_03_t).concat(daysData_23_04_t).concat(daysData_23_05_t).concat(daysData_23_06_t).concat(daysData_23_07_t).concat(daysData_23_08_t).concat(daysData_23_09_t).concat(daysData_23_10_t).concat(daysData_23_11_t).concat(daysData_23_12_t)
-  .concat(daysData_24_01_t).concat(daysData_24_02_t).concat(daysData_24_03_t)
+  .concat(daysData_24_01_t).concat(daysData_24_02_t).concat(daysData_24_03_t).concat(daysData_24_04_t).concat(daysData_24_05_t).concat(daysData_24_06_t).concat(daysData_24_07_t).concat(daysData_24_08_t).concat(daysData_24_09_t).concat(daysData_24_10_t).concat(daysData_24_11_t).concat(daysData_24_12_t)
 
-  const daysData_2021_01_2023_12_5m = [daysData_2021_01_2023_12_5m_temp]
+  const daysData_2021_01_2024_12_5m = [daysData_2021_01_2024_12_5m_temp]
 
 const dataTemp=dataTempOld.reverse()
 const sampleData=[[
@@ -2594,28 +3173,6 @@ const ExcelFile = ReactExport.ExcelFile;
 const ExcelSheet = ReactExport.ExcelFile.ExcelSheet;
 const ExcelColumn = ReactExport.ExcelFile.ExcelColumn;
 
-const data = [
-  { country: "cn", value: 1389618778 }, // china
-  { country: "in", value: 1311559204 }, // india
-  { country: "us", value: 331883986 }, // united states
-  { country: "id", value: 264935824 }, // indonesia
-  { country: "pk", value: 210797836 }, // pakistan
-  { country: "br", value: 210301591 }, // brazil
-  { country: "ng", value: 208679114 }, // nigeria
-  { country: "bd", value: 161062905 }, // bangladesh
-  { country: "ru", value: 141944641 }, // russia
-  { country: "mx", value: 127318112 }, // mexico
-];
-const mapData = {
-  CN: 12000,
-  IN: 9900,
-  SA: 86,
-  EG: 70,
-  SE: 0,
-  FI: 0,
-  FR: 0,
-  US: 20,
-};
 const Algorithm = (props) => {
   const [accountAmount, setAccountAmount] = useState(10000)
   const [profitVolume, setProfitVolume] = useState(100)
@@ -2623,8 +3180,8 @@ const Algorithm = (props) => {
   const [amountNumber, setAmountNumber] = useState(20)
   const [unitAmount, setUnitAmount] = useState(1000)
   const [daysSample, setDaysSample] = useState(sampleData)
-  const [days, setDays] = useState(daysData_2021_01_2023_12_5m) //daysData_22_07_m
-  const [days1, setDays1] = useState(daysData_2021_01_2023_12_5m) //daysData_22_07_m
+  const [days, setDays] = useState(daysData_2021_01_2024_12_5m) //daysData_22_07_m
+  const [days1, setDays1] = useState(daysData_2021_01_2024_12_5m) //daysData_22_07_m
   const [results, setResults] = useState()
   const [exportData, setExportData] = useState([]);
   const [period, setPeriod] = useState(hourPeriod[0]);
@@ -2638,7 +3195,7 @@ const Algorithm = (props) => {
   const [lossLimit, setlossLimit] = useState(20000)
   const [profit, setProfit] = useState(200) //300 : 9
   const [invert, setInvert] = useState(300)
-  const [loss, setloss] = useState(200) //300 : 9
+  const [loss, setloss] = useState(500) //300 : 9
   const [selectionRange, setSelectionRange] = useState([{
     startDate: new Date(),
     endDate: new Date(),
@@ -5300,7 +5857,7 @@ const Algorithm = (props) => {
     console.log('shortLossIndex1:',shortLossIndex1, shortLossIndex2, shortLossIndex3, shortLossIndex4 )
   }
 
-  //completed algorithm : If the difference is less than 500, work for a 5-point reward (1/5 amount)
+  //completed algorithm 5 point: If the difference is less than 500, work for a 5-point reward (1/5 amount)
   const calcAlgorithm4_6=()=>{
     let i=0
     let priceDatas=testData
@@ -5399,15 +5956,15 @@ const Algorithm = (props) => {
                 }
                 longLoss=longLoss - (feePercent/2)*(takeLossAmount/priceData)
                 longLossIndex2 = longLossIndex2 +1
-                // longCurPosition = longCurPosition + Number((longDifference/5).toFixed(0))
                 longCurPosition = longCurPosition + Number((longDifference*(takeLossAmount/(longAmount+takeLossAmount))).toFixed(0))
+                // longCurPosition = longCurPosition + Number(( (6-longTakePositions.length)*restartVolume/5 *(takeLossAmount/(longAmount+takeLossAmount))).toFixed(0))
                 longAmount = longAmount + takeLossAmount
                 // console.log('longLoss_2====:',i,longDifference, priceData, "+",longCurPosition, longLoss.toFixed(0), longAmount.toFixed(0))
               }else if (differenceFromLongTakedPosition>=-restartVolume/5){
                 longTakePositions.push(priceData)
                 longAmount = longAmount - takeLossAmount
                 longLoss=longLoss  + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                // + (longDifference)*((takeLossAmount)/priceData) 
+                // longLoss=longLoss  + (restartVolume-(longTakePositions.length-1)*restartVolume/5)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
                 longLoss1 = longLoss1 + (longDifference)*((takeLossAmount)/priceData)
                 longDifference2 = longDifference2 + longDifference
                 longLossIndex3 = longLossIndex3 +1
@@ -5428,6 +5985,7 @@ const Algorithm = (props) => {
                 longAmount = longAmount - takeLossAmount
                 takedLongLoss = true
                 longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                // longLoss=longLoss + (restartVolume)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
                 longLoss2 = longLoss2  + (longDifference)*((takeLossAmount)/priceData)
                 longDifference3 = longDifference3 + longDifference
                 // + (longDifference)*((takeLossAmount)/priceData) 
@@ -5486,14 +6044,15 @@ const Algorithm = (props) => {
                 }
                 shortLossIndex2 = shortLossIndex2 +1
                 shortLoss=shortLoss - (feePercent/2)*(takeLossAmount/priceData)
-                // shortCurPosition = shortCurPosition - Number((shortDifference/5).toFixed(0))
                 shortCurPosition = shortCurPosition - Number((shortDifference*(takeLossAmount/(shortAmount+takeLossAmount))).toFixed(0))
+                // shortCurPosition = shortCurPosition - Number(((6-shortTakePositions.length)*restartVolume/5 *(takeLossAmount/(shortAmount+takeLossAmount))).toFixed(0))
                 // console.log('priceData====2:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
                 shortAmount = shortAmount + takeLossAmount
               }else if (differenceFromShortTakedPosition>=-restartVolume/5){
                 shortTakePositions.push(priceData)
                 shortAmount = shortAmount - takeLossAmount
                 shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                // shortLoss=shortLoss  + (restartVolume-(shortTakePositions.length-1)*restartVolume/5)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
                 shortLoss1=shortLoss1  +(shortDifference)*((takeLossAmount)/priceData)
                 shortLossIndex3 = shortLossIndex3 +1
                 // console.log('priceData====3:',i,shortDifference, priceData, "+",shortCurPosition, shortAmount.toFixed(0))
@@ -5512,6 +6071,7 @@ const Algorithm = (props) => {
                 shortAmount = shortAmount - takeLossAmount
                 takedShortLoss = true
                 shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                // shortLoss=shortLoss +(restartVolume)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
                 shortLoss2=shortLoss2  +(shortDifference)*((takeLossAmount)/priceData)
 
                 // +(shortDifference)*((takeLossAmount)/priceData)
@@ -5638,11 +6198,9 @@ const Algorithm = (props) => {
             longProfitIndex1 = longProfitIndex1 +1
             isStartedLong = false
           }else if(longDifference<=restartVolume){
-            // longLoss=longLoss+(longDifference)*((longAmount)/priceData)//- (feePercent/2)*(longAmount/priceData)
+            longLoss=longLoss+(longDifference)*((longAmount)/priceData)//- (feePercent/2)*(longAmount/priceData)
             isStartedLong = false
             longLossIndex1 = longLossIndex1 +1
-            console.log('longLoss===P1',i,longDifference,priceData,"+",longCurPosition,"=",longLoss.toFixed(0), amount.toFixed(0))
-
           }
         }
       }
@@ -5666,10 +6224,9 @@ const Algorithm = (props) => {
             isStartedShort = false
             shortProfitIndex1 = shortProfitIndex1 +1
           }else if(shortDifference<=restartVolume){
-            // shortLoss=shortLoss+(shortDifference)*((shortAmount)/priceData)// - (feePercent/2)*(shortAmount/priceData)
+            shortLoss=shortLoss+(shortDifference)*((shortAmount)/priceData)// - (feePercent/2)*(shortAmount/priceData)
             isStartedShort = false
             shortLossIndex1 = shortLossIndex1 +1
-
           }
         }
       }
@@ -5702,6 +6259,187 @@ const Algorithm = (props) => {
     console.log('shortProfit:',shortProfit.toFixed(0) )
     console.log('shortLoss:',shortLoss.toFixed(0) )
     console.log('longProfitIndex:', longProfitIndex1, longProfitIndex2)
+    console.log('longLossIndex1:',longLossIndex1,longLossIndex2, longLossIndex3, longLossIndex4 )
+    console.log('shortProfitIndex:', shortProfitIndex1, shortProfitIndex2)
+    console.log('shortLossIndex1:',shortLossIndex1, shortLossIndex2, shortLossIndex3, shortLossIndex4 )
+  }
+
+  const calcAlgorithm4_7_2=()=>{
+    let i=0
+    let priceDatas=testData
+    let profitVolume=profit
+    let restartVolume=-loss
+    priceDatas=newDays[0]
+    let longStartPosition = 0
+    let longLastPosition = 0
+    let longCurPosition=0
+    let longDifference = 0
+    let longProfit = 0
+    let longProfit1 = 0
+    let longLoss = 0
+    let longLoss1 = 0
+    let longLoss2 = 0
+    let longEnable = true
+    let shortEnable = true
+    let isStartedLong = false
+    let shortStartPosition=0
+    let shortCurPosition=0
+    let shortDifference = 0
+    let shortProfit = 0
+    let shortProfit1 = 0
+    let shortLoss = 0
+    let shortLoss1 = 0
+    let shortLoss2 = 0
+    let isStartedShort = false
+    let dayTotal=0
+    let dayLongTotal=0
+    let dayShortTotal=0
+    let dayLongTotalArray=[]
+    let dayShortTotalArray=[]
+    let dayTotalArray=[]
+    let amount = unitAmount
+    let longAmount = unitAmount
+    let shortAmount = unitAmount
+    console.log('priceDatas:',priceDatas)
+    console.log('amount:',amount)
+    let feePercent = amountNumber
+    let longStartIndex =0
+    let longIdx = 0
+    let shortIdx = 0
+    let longProfitIndex1 = 0
+    let shortProfitIndex1 = 0
+    let shortProfitIndex2= 0
+    let shortLossIndex1 = 0
+    let shortStartIndex =0
+    let longProfitIndex2 = 0
+    let longProfitIndex3 = 0
+    let longLossIndex1 = 0
+    let longLossIndex2 = 0
+    let longLossIndex3 = 0
+    let longLossIndex4= 0
+    let shortLossIndex2 = 0
+    let amountTemp = unitAmount
+    let takeLossAmount = unitAmount/5
+    let longTakePositions = []
+    let takedLongLoss = false
+    let differenceFromLongTakedPosition = 0
+    let shortTakePositions = []
+    let takedShortLoss = false
+    let differenceFromShortTakedPosition = 0
+    let shortLossIndex3 = 0
+    let shortLossIndex4 = 0
+    let startLongCount = false
+    let startShortCount = false
+
+    for (let priceData of priceDatas) {
+      if (startLongCount){
+        longIdx = longIdx + 1
+      }
+      if (startShortCount){
+        shortIdx = shortIdx + 1
+      }
+      if(longEnable){
+        if(!isStartedLong){
+          longStartPosition = priceData
+          longCurPosition = priceData
+          // longLoss=longLoss - (feePercent/2)*(longAmount/priceData)
+          longStartIndex =longStartIndex+1
+          isStartedLong = true
+          takedLongLoss = false
+          longAmount = unitAmount
+          longTakePositions = []
+          startLongCount = false
+          console.log('longCurPosition...', longCurPosition)
+        }else{
+          longDifference = priceData - longCurPosition
+          if ((longCurPosition == 0 && priceData <= longStartPosition + restartVolume)){
+            longIdx = 0
+            isStartedLong = false
+            longProfitIndex2 = longProfitIndex2 +1
+          }
+          if (longIdx >= 300) {
+            longIdx = 0
+            isStartedLong = false
+            longProfitIndex3 = longProfitIndex3 +1
+          }
+          if(longCurPosition !== 0 && longDifference >= profitVolume){
+            longProfit=longProfit+(longDifference)*(longAmount/priceData)//- (feePercent/2)*(longAmount/priceData)
+            // console.log('longProfit===P1',i,longDifference,priceData,"+",longCurPosition,"=",longProfit.toFixed(0), amount.toFixed(0))
+            longProfitIndex1 = longProfitIndex1 +1
+            longCurPosition = 0
+            startLongCount = true
+            // isStartedLong = false
+          }
+          if(longCurPosition !== 0 && longDifference<=restartVolume){
+            longLoss=longLoss+(longDifference)*((longAmount)/priceData)//- (feePercent/2)*(longAmount/priceData)
+            // isStartedLong = false
+            longCurPosition = 0
+            longStartPosition = priceData
+            startLongCount = true
+            longLossIndex1 = longLossIndex1 +1
+          }
+        }
+      }
+
+      if(shortEnable){
+        if(!isStartedShort){
+          shortStartPosition = priceData
+          shortCurPosition = priceData
+          // shortLoss=shortLoss - (feePercent/2)*(amount/priceData)
+          shortStartIndex =shortStartIndex +1
+          isStartedShort = true
+          takedShortLoss = false
+          shortAmount = unitAmount
+          shortTakePositions = []
+        }else{
+          shortDifference = shortCurPosition - priceData 
+          // if (shortCurPosition == 0 && shortIdx >= 300){
+          //   shortIdx = 0
+          //   isStartedShort = false
+          // }
+          //If the difference is greater than the profit volume (e.g. 100) get profit
+          if(shortCurPosition !== 0 && shortDifference>=profitVolume){
+            shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData)// - (feePercent/2)*(shortAmount/priceData)
+            // console.log('shortProfit:',i,shortDifference,priceData,"+",shortCurPosition,"=",shortProfit)
+            isStartedShort = false
+            shortCurPosition = 0
+            shortProfitIndex1 = shortProfitIndex1 +1
+          }else if(shortDifference<=restartVolume){
+            // shortLoss=shortLoss+(shortDifference)*((shortAmount)/priceData)// - (feePercent/2)*(shortAmount/priceData)
+            isStartedShort = false
+            shortLossIndex1 = shortLossIndex1 +1
+          }
+        }
+      }
+         
+      dayTotal=(
+        longProfit+
+        longLoss+
+        shortProfit+
+        shortLoss
+        )      
+      dayLongTotal=(longProfit+longLoss)
+      dayShortTotal=(shortProfit+shortLoss)
+      let periodN=(24*(60/(5*period.value))).toFixed(0)
+      if(((i+2)%periodN)==0){
+        dayTotalArray.push(dayTotal.toFixed(0))
+        dayLongTotalArray.push(dayLongTotal.toFixed(0))
+        dayShortTotalArray.push(dayShortTotal.toFixed(0))
+      }
+      let seriesTmp=[
+        { name: "Total", data: dayTotalArray},
+        { name: "Long", data: dayLongTotalArray},
+        { name: "Short", data: dayShortTotalArray},
+      ]
+      setSeries(seriesTmp)
+      i = i + 1
+    }
+    console.log("amountTemp===",amountTemp)
+    console.log('longProfit:',longProfit.toFixed(0) )
+    console.log('longLoss:',longLoss.toFixed(0))
+    console.log('shortProfit:',shortProfit.toFixed(0) )
+    console.log('shortLoss:',shortLoss.toFixed(0) )
+    console.log('longProfitIndex:', longProfitIndex1, longProfitIndex2, longProfitIndex3)
     console.log('longLossIndex1:',longLossIndex1,longLossIndex2, longLossIndex3, longLossIndex4 )
     console.log('shortProfitIndex:', shortProfitIndex1, shortProfitIndex2)
     console.log('shortLossIndex1:',shortLossIndex1, shortLossIndex2, shortLossIndex3, shortLossIndex4 )
@@ -6114,8 +6852,8 @@ const Algorithm = (props) => {
     console.log('shortLossIndex1:',shortLossIndex1, shortLossIndex2, shortLossIndex3, shortLossIndex4 )
   }
 
-  //high profit 5 point :  If the difference is less than 100, work for a 5-point reward (1/5 amount)
-  const calcAlgorithm4_11=()=>{
+  // 2 point : If the difference is less than 100, work for a 2-point reward (1/2 amount)
+  const calcAlgorithm4_10_2=()=>{
     let i=0
     let priceDatas=testData
     let profitVolume=profit
@@ -6136,7 +6874,238 @@ const Algorithm = (props) => {
     let shortDifference = 0
     let shortProfit = 0
     let shortLoss = 0
+    let shortLoss1 = 0
     let shortLoss2 = 0
+    let isStartedShort = false
+    let dayTotal=0
+    let dayLongTotal=0
+    let dayShortTotal=0
+    let dayLongTotalArray=[]
+    let dayShortTotalArray=[]
+    let dayTotalArray=[]
+    let amount = unitAmount
+    let longAmount = unitAmount
+    let shortAmount = unitAmount
+    let feePercent = amountNumber
+    let longStartIndex =0
+    let longProfitIndex1 = 0
+    let shortProfitIndex1 = 0
+    let shortProfitIndex2= 0
+    let shortLossIndex1 = 0
+    let shortStartIndex =0
+    let longProfitIndex2 = 0
+    let longLossIndex1 = 0
+    let longLossIndex2 = 0
+    let longLossIndex3 = 0
+    let longLossIndex4= 0
+    let shortLossIndex2 = 0
+    let amountTemp = unitAmount
+    let takeLossAmount = unitAmount/2
+    let longTakePositions = []
+    let takedLongLoss = false
+    let differenceFromLongTakedPosition = 0
+    let shortTakePositions = []
+    let takedShortLoss = false
+    let differenceFromShortTakedPosition = 0
+    let shortLossIndex3 = 0
+    let shortLossIndex4 = 0
+    let longWait = false
+    let longWaitCount = 0
+    let longProfitPosition = 0
+    let shortWait = false
+    let shortWaitCount = 0
+    let shortProfitPosition = 0
+    console.log('priceDatas:',priceDatas)
+    console.log('amount:',amount)
+    for (let priceData of priceDatas) {
+      if(longEnable){
+        if(!isStartedLong){
+          longStartPosition = priceData
+          longCurPosition = priceData
+          longLoss=longLoss - (feePercent/2)*(longAmount/priceData)
+          longStartIndex =longStartIndex+1
+          longLossIndex1 = longLossIndex1 +1
+          isStartedLong = true
+          takedLongLoss = false
+          longAmount = unitAmount
+          longTakePositions = []
+        }else{
+          if (!longWait) {
+            longDifference = priceData - longCurPosition
+            if(longDifference>=profitVolume){
+              longProfit=longProfit+(longDifference)*(longAmount/priceData) - (feePercent/2)*(longAmount/priceData)
+              longProfitIndex1 = longProfitIndex1 +1
+              // isStartedLong = false
+              longWait = true
+              longProfitPosition = priceData
+              console.log('longProfit:',i,longDifference, priceData, longCurPosition, longProfitPosition)
+            }else{
+              if (takedLongLoss){
+                differenceFromLongTakedPosition = priceData - longTakePositions[longTakePositions.length-1]
+                if (differenceFromLongTakedPosition<=restartVolume/2){
+                  longTakePositions.push(priceData)
+                  longAmount = longAmount - takeLossAmount
+                  longLoss=longLoss  + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                  // longLoss=longLoss  + (longTakePositions.length*restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                  longLoss1 = longLoss1 + (longDifference)*((takeLossAmount)/priceData)
+                  longLossIndex3 = longLossIndex3 +1
+                  if (longAmount == 0 || longTakePositions.length == 2){
+                    // isStartedLong = false
+                    longProfitPosition = priceData
+                    longWait = true
+                  }
+                }
+              }else{
+                if(longDifference<=restartVolume/2){
+                  longTakePositions.push(priceData)
+                  // longTakePositions.push(longCurPosition + restartVolume/2)
+                  longAmount = longAmount - takeLossAmount
+                  takedLongLoss = true
+                  longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                  // longLoss=longLoss + (restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                  longLoss2 = longLoss2  + (longDifference)*((takeLossAmount)/priceData)
+                  longLossIndex4 = longLossIndex4 +1
+
+                }
+              }
+            }
+          }else{
+            longWaitCount = longWaitCount + 1
+            longDifference = longProfitPosition - priceData
+            if (longDifference>profitVolume/2 || longWaitCount > 20){
+              isStartedLong = false
+              longWait = false
+              longWaitCount = 0
+            }
+          }
+        }
+      }
+
+      if(shortEnable){
+        if(!isStartedShort){
+          shortStartPosition = priceData
+          shortCurPosition = priceData
+          shortLoss=shortLoss - (feePercent/2)*(amount/priceData)
+          shortLossIndex1 =shortLossIndex1 +1
+          isStartedShort = true
+          takedShortLoss = false
+          shortAmount = unitAmount
+          shortTakePositions = []
+        }else{
+          if (!shortWait){
+            shortDifference = shortCurPosition - priceData 
+            if(shortDifference>=profitVolume){
+              shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData) - (feePercent/2)*(shortAmount/priceData)
+              // isStartedShort = false
+              shortWait=true
+              shortProfitPosition = priceData
+              shortProfitIndex1 = shortProfitIndex1 +1
+            }else{
+              if (takedShortLoss){
+                differenceFromShortTakedPosition = shortTakePositions[shortTakePositions.length-1] - priceData 
+                if (differenceFromShortTakedPosition<=restartVolume/2){
+                  shortTakePositions.push(priceData)
+                  shortAmount = shortAmount - takeLossAmount
+                  shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                  // shortLoss=shortLoss +(shortTakePositions.length*restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                  shortLoss1=shortLoss1  +(shortDifference)*((takeLossAmount)/priceData)
+                  shortLossIndex3 = shortLossIndex3 +1
+                  if (shortAmount == 0 || shortTakePositions.length == 2){
+                    // isStartedShort = false
+                    shortWait=true
+                    shortProfitPosition = priceData
+                  }
+                }
+              }else{
+                if(shortDifference<=restartVolume/2){
+                  shortTakePositions.push(priceData)
+                  // shortTakePositions.push(shortCurPosition - restartVolume/2)
+                  shortAmount = shortAmount - takeLossAmount
+                  takedShortLoss = true
+                  shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                  // shortLoss=shortLoss +(restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                  shortLoss2=shortLoss2  +(shortDifference)*((takeLossAmount)/priceData)
+                  shortLossIndex4 = shortLossIndex4 +1
+                }
+              }
+            }
+          }else{
+            shortWaitCount = shortWaitCount + 1
+            shortDifference = priceData - shortProfitPosition
+            if (shortDifference>profitVolume/2 || shortWaitCount > 20){
+              isStartedShort = false
+              shortWait = false
+              shortWaitCount = 0
+            }
+          }
+        }
+      }
+         
+      dayTotal=(
+        longProfit+
+        longLoss+
+        shortProfit+
+        shortLoss
+        )      
+      dayLongTotal=(longProfit+longLoss)
+      dayShortTotal=(shortProfit+shortLoss)
+      let periodN=(24*(60/(5*period.value))).toFixed(0)
+      if(((i+2)%periodN)==0){
+        dayTotalArray.push(dayTotal.toFixed(0))
+        dayLongTotalArray.push(dayLongTotal.toFixed(0))
+        dayShortTotalArray.push(dayShortTotal.toFixed(0))
+      }
+      let seriesTmp=[
+        { name: "Total", data: dayTotalArray},
+        { name: "Long", data: dayLongTotalArray},
+        { name: "Short", data: dayShortTotalArray},
+      ]
+      setSeries(seriesTmp)
+      i = i + 1
+    }
+    console.log("amountTemp===",amountTemp)
+    console.log('longProfit:',longProfit.toFixed(0) )
+    console.log('longLoss:',longLoss.toFixed(0))
+    console.log('shortProfit:',shortProfit.toFixed(0) )
+    console.log('shortLoss:',shortLoss.toFixed(0) )
+    console.log('longProfitIndex:', longProfitIndex1, longProfitIndex2)
+    console.log('longLossIndex1:',longLossIndex1,longLossIndex2, longLossIndex3, longLossIndex4 )
+    console.log('shortProfitIndex:', shortProfitIndex1, shortProfitIndex2)
+    console.log('shortLossIndex1:',shortLossIndex1, shortLossIndex2, shortLossIndex3, shortLossIndex4 )
+  }
+
+  //high profit 5 point :  If the difference is less than 100, work for a 5-point reward (1/5 amount)
+  const calcAlgorithm4_11=()=>{
+    let i=0
+    let priceDatas=testData
+    let profitVolume=profit
+    let restartVolume=-loss
+    priceDatas=newDays[0]
+    let longStartPosition=0
+    let longCurPosition=0
+    let longDifference = 0
+    let longProfit = 0
+    let longLoss = 0
+    let longLoss1 = 0
+    let longLoss2 = 0    
+    let longLoss2_2 = 0    
+    let longLoss3 = 0    
+    let longLoss3_2 = 0    
+    let shortLoss1 = 0
+    console.log('priceDatas:',priceDatas)
+    console.log('amount:',amount)
+    let shortLoss2 = 0
+    let shortLoss2_2 = 0
+    let shortLoss3 = 0
+    let shortLoss3_2 = 0
+    let longEnable = true
+    let shortEnable = true
+    let isStartedLong = false
+    let shortStartPosition=0
+    let shortCurPosition=0
+    let shortDifference = 0
+    let shortProfit = 0
+    let shortLoss = 0
     let isStartedShort = false
     let dayTotal=0
     let dayLongTotal=0
@@ -6179,6 +7148,7 @@ const Algorithm = (props) => {
           longStartPosition = priceData
           longCurPosition = priceData
           longLoss=longLoss - (feePercent/2)*(longAmount/priceData)
+          longLoss1=longLoss1 - (feePercent/2)*(longAmount/priceData)
           longStartIndex =longStartIndex+1
           longLossIndex1 = longLossIndex1 +1
           isStartedLong = true
@@ -6200,10 +7170,11 @@ const Algorithm = (props) => {
               if (differenceFromLongTakedPosition<=restartVolume/5){
                 longTakePositions.push(priceData)
                 longAmount = longAmount - takeLossAmount
-                longLoss=longLoss  + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                // longLoss=longLoss  + (longTakePositions.length*restartVolume/5)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                longLoss1 = longLoss1 + (longDifference)*((takeLossAmount)/priceData)
-                longLossIndex3 = longLossIndex3 +1
+                // longLoss=longLoss  + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLoss=longLoss  + (longTakePositions.length*restartVolume/5)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLoss2 = longLoss2 + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLoss2_2 = longLoss2_2 - (feePercent/2)*(takeLossAmount/priceData)
+                longLossIndex2 = longLossIndex2 +1
                 if (longAmount == 0 || longTakePositions.length == 5){
                   isStartedLong = false
                 }
@@ -6213,10 +7184,11 @@ const Algorithm = (props) => {
                 longTakePositions.push(priceData)
                 longAmount = longAmount - takeLossAmount
                 takedLongLoss = true
-                longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                // longLoss=longLoss + (restartVolume/5)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                longLoss2 = longLoss2  + (longDifference)*((takeLossAmount)/priceData)
-                longLossIndex4 = longLossIndex4 +1
+                // longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLoss=longLoss + (restartVolume/5)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLoss3 = longLoss3  + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLoss3_2 = longLoss3_2 - (feePercent/2)*(takeLossAmount/priceData)
+                longLossIndex3 = longLossIndex3 +1
               }
             }
           }
@@ -6228,7 +7200,9 @@ const Algorithm = (props) => {
           shortStartPosition = priceData
           shortCurPosition = priceData
           shortLoss=shortLoss - (feePercent/2)*(amount/priceData)
+          shortLoss1=shortLoss1 - (feePercent/2)*(amount/priceData)
           shortStartIndex =shortStartIndex +1
+          shortLossIndex1 = shortLossIndex1 +1
           isStartedShort = true
           takedShortLoss = false
           shortAmount = unitAmount
@@ -6248,10 +7222,11 @@ const Algorithm = (props) => {
               if (differenceFromShortTakedPosition<=restartVolume/5){
                 shortTakePositions.push(priceData)
                 shortAmount = shortAmount - takeLossAmount
-                shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                // shortLoss=shortLoss +(shortTakePositions.length*restartVolume/5)*((takeLossAmount)/priceData)// - (feePercent/2)*(takeLossAmount/priceData)
-                // shortLoss1=shortLoss1  +(shortDifference)*((takeLossAmount)/priceData)
-                shortLossIndex3 = shortLossIndex3 +1
+                // shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss=shortLoss +(shortTakePositions.length*restartVolume/5)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss2=shortLoss2 +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss2_2=shortLoss2_2 - (feePercent/2)*(takeLossAmount/priceData)
+                shortLossIndex2 = shortLossIndex2 +1
                 if (shortAmount == 0 || shortTakePositions.length == 5){
                   isStartedShort = false
                 }
@@ -6261,10 +7236,11 @@ const Algorithm = (props) => {
                 shortTakePositions.push(priceData)
                 shortAmount = shortAmount - takeLossAmount
                 takedShortLoss = true
-                shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                // shortLoss=shortLoss +(restartVolume/5)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                shortLoss2=shortLoss2  +(shortDifference)*((takeLossAmount)/priceData)
-                shortLossIndex4 = shortLossIndex4 +1
+                // shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss=shortLoss +(restartVolume/5)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss3=shortLoss3 +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss3_2=shortLoss3_2 - (feePercent/2)*(takeLossAmount/priceData)
+                shortLossIndex3 = shortLossIndex3 +1
               }
             }
           }
@@ -6296,8 +7272,14 @@ const Algorithm = (props) => {
     console.log("amountTemp===",amountTemp)
     console.log('longProfit:',longProfit.toFixed(0) )
     console.log('longLoss:',longLoss.toFixed(0))
+    console.log('longLoss1:',longLoss1.toFixed(0))
+    console.log('longLoss2:',longLoss2.toFixed(0),longLoss2_2.toFixed(0))
+    console.log('longLoss3:',longLoss3.toFixed(0),longLoss3_2.toFixed(0))
     console.log('shortProfit:',shortProfit.toFixed(0) )
     console.log('shortLoss:',shortLoss.toFixed(0) )
+    console.log('shortLoss1:',shortLoss1.toFixed(0) )
+    console.log('shortLoss2:',shortLoss2.toFixed(0),shortLoss2_2.toFixed(0)  )
+    console.log('shortLoss3:',shortLoss3.toFixed(0),shortLoss3_2.toFixed(0)  )
     console.log('longProfitIndex:', longProfitIndex1, longProfitIndex2)
     console.log('longLossIndex1:',longLossIndex1,longLossIndex2, longLossIndex3, longLossIndex4 )
     console.log('shortProfitIndex:', shortProfitIndex1, shortProfitIndex2)
@@ -6861,6 +7843,184 @@ const Algorithm = (props) => {
     console.log('shortProfitIndex:', shortProfitIndex1, shortProfitIndex2)
     console.log('shortLossIndex1:',shortLossIndex1, shortLossIndex2, shortLossIndex3, shortLossIndex4 )
   }
+
+  const calcAlgorithm4_15=()=>{
+    let i=0
+    let priceDatas=testData
+    let profitVolume=profit
+    let restartVolume=-loss
+    priceDatas=newDays[0]
+    let longStartPosition=0
+    let longCurPosition=0
+    let longDifference = 0
+    let longProfit = 0
+    let longLoss = 0
+    let longLoss1 = 0
+    let longLoss2 = 0
+    let longEnable = true
+    let shortEnable = true
+    let isStartedLong = false
+    let shortStartPosition=0
+    let shortCurPosition=0
+    let shortDifference = 0
+    let shortProfit = 0
+    let shortLoss = 0
+    let shortLoss1 = 0
+    let shortLoss2 = 0
+    let isStartedShort = false
+    let dayTotal=0
+    let dayLongTotal=0
+    let dayShortTotal=0
+    let dayLongTotalArray=[]
+    let dayShortTotalArray=[]
+    let dayTotalArray=[]
+    let amount = unitAmount
+    let longAmount = unitAmount
+    let shortAmount = unitAmount
+    let feePercent = amountNumber
+    let longStartIndex =0
+    let longProfitIndex1 = 0
+    let shortProfitIndex1 = 0
+    let shortProfitIndex2= 0
+    let shortLossIndex1 = 0
+    let shortStartIndex =0
+    let longProfitIndex2 = 0
+    let longLossIndex1 = 0
+    let longLossIndex2 = 0
+    let longLossIndex3 = 0
+    let longLossIndex4= 0
+    let shortLossIndex2 = 0
+    let amountTemp = unitAmount
+    let takeLossAmount = unitAmount/2
+    let longTakePositions = []
+    let takedLongLoss = false
+    let differenceFromLongTakedPosition = 0
+    let shortTakePositions = []
+    let takedShortLoss = false
+    let differenceFromShortTakedPosition = 0
+    let shortLossIndex3 = 0
+    let shortLossIndex4 = 0
+    console.log('priceDatas:',priceDatas)
+    console.log('amount:',amount)
+    for (let priceData of priceDatas) {
+      if(longEnable){
+        if(!isStartedLong){
+          longStartPosition = priceData
+          longCurPosition = priceData
+          longLoss=longLoss - (feePercent/2)*(longAmount/priceData)
+          longStartIndex =longStartIndex+1
+          longLossIndex1 = longLossIndex1 +1
+          isStartedLong = true
+          takedLongLoss = false
+          longAmount = unitAmount
+          longTakePositions = []
+        }else{
+          longDifference = priceData - longCurPosition
+          if(longDifference>=profitVolume){
+            longProfit=longProfit+(longDifference)*(longAmount/priceData) - (feePercent/2)*(longAmount/priceData)
+            longProfitIndex1 = longProfitIndex1 +1
+            isStartedLong = false
+          }else{
+            if (takedLongLoss){
+              differenceFromLongTakedPosition = priceData - longTakePositions[longTakePositions.length-1]
+              if (differenceFromLongTakedPosition<=restartVolume/2){
+                longTakePositions.push(priceData)
+                longAmount = longAmount - takeLossAmount
+                longLoss=longLoss  + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLossIndex3 = longLossIndex3 +1
+                if (longAmount == 0 || longTakePositions.length == 2){
+                  isStartedLong = false
+                }
+              }
+            }else{
+              if(longDifference<=restartVolume/2){
+                longTakePositions.push(priceData)
+                longAmount = longAmount - takeLossAmount
+                takedLongLoss = true
+                longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLossIndex4 = longLossIndex4 +1
+              }
+            }
+          }
+        }
+      }
+
+      if(shortEnable){
+        if(!isStartedShort){
+          shortStartPosition = priceData
+          shortCurPosition = priceData
+          shortLoss=shortLoss - (feePercent/2)*(amount/priceData)
+          shortLossIndex1 =shortLossIndex1 +1
+          isStartedShort = true
+          takedShortLoss = false
+          shortAmount = unitAmount
+          shortTakePositions = []
+        }else{
+          shortDifference = shortCurPosition - priceData 
+          if(shortDifference>=profitVolume){
+            shortProfit=shortProfit+(shortDifference)*(shortAmount/priceData) - (feePercent/2)*(shortAmount/priceData)
+            isStartedShort = false
+            shortProfitIndex1 = shortProfitIndex1 +1
+          }else{
+            if (takedShortLoss){
+              differenceFromShortTakedPosition = shortTakePositions[shortTakePositions.length-1] - priceData 
+              if (differenceFromShortTakedPosition<=restartVolume/2){
+                shortTakePositions.push(priceData)
+                shortAmount = shortAmount - takeLossAmount
+                shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss1=shortLoss1  +(shortDifference)*((takeLossAmount)/priceData)
+                shortLossIndex3 = shortLossIndex3 +1
+                if (shortAmount == 0 || shortTakePositions.length == 2){
+                  isStartedShort = false
+                }
+              }
+
+            }else{
+              if(shortDifference<=restartVolume/2){
+                shortTakePositions.push(priceData)
+                shortAmount = shortAmount - takeLossAmount
+                takedShortLoss = true
+                shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss2=shortLoss2  +(shortDifference)*((takeLossAmount)/priceData)
+                shortLossIndex4 = shortLossIndex4 +1
+              }
+            }
+          }
+        }
+      }
+         
+      dayTotal=(
+        longProfit+
+        longLoss+
+        shortProfit+
+        shortLoss
+        )      
+      dayLongTotal=(longProfit+longLoss)
+      dayShortTotal=(shortProfit+shortLoss)
+      let periodN=(24*(60/(5*period.value))).toFixed(0)
+      if(((i+2)%periodN)==0){
+        dayTotalArray.push(dayTotal.toFixed(0))
+        dayLongTotalArray.push(dayLongTotal.toFixed(0))
+        dayShortTotalArray.push(dayShortTotal.toFixed(0))
+      }
+      let seriesTmp=[
+        { name: "Total", data: dayTotalArray},
+        { name: "Long", data: dayLongTotalArray},
+        { name: "Short", data: dayShortTotalArray},
+      ]
+      setSeries(seriesTmp)
+      i = i + 1
+    }
+    console.log("amountTemp===",amountTemp)
+    console.log('longProfit:',longProfit.toFixed(0) )
+    console.log('longLoss:',longLoss.toFixed(0))
+    console.log('shortProfit:',shortProfit.toFixed(0) )
+    console.log('shortLoss:',shortLoss.toFixed(0) )
+    console.log('longProfitIndex:', longProfitIndex1, longProfitIndex2)
+    console.log('longLossIndex1:',longLossIndex1,longLossIndex2, longLossIndex3, longLossIndex4 )
+    console.log('shortProfitIndex:', shortProfitIndex1, shortProfitIndex2)
+    console.log('shortLossIndex1:',shortLossIndex1, shortLossIndex2, shortLossIndex3, shortLossIndex4 )
+  }
   const onChangeValue=(value, type)=> {
     console.log('value, type:',value, type)
     if(type=='unitAmount'){
@@ -6965,7 +8125,7 @@ const Algorithm = (props) => {
         </Button>
         <Button
           style={{ width: '70px', height: '28px', padding: '0px',marginLeft:'20px' }}
-          onClick={calcAlgorithm4_13}
+          onClick={calcAlgorithm4_11}
           color={"primary"}
           size="sm"
           className="top-right-button"
@@ -6974,7 +8134,7 @@ const Algorithm = (props) => {
         </Button>
         <Button
           style={{ width: '70px', height: '28px', padding: '0px',marginLeft:'20px' }}
-          onClick={calcAlgorithm4_14}
+          onClick={calcAlgorithm4_10}
           color={"primary"}
           size="sm"
           className="top-right-button"
@@ -6983,7 +8143,7 @@ const Algorithm = (props) => {
         </Button>
         <Button
           style={{ width: '70px', height: '28px', padding: '0px',marginLeft:'20px' }}
-          onClick={calcAlgorithm4_6}
+          onClick={calcAlgorithm4_7}
           color={"primary"}
           size="sm"
           className="top-right-button"
@@ -6992,7 +8152,7 @@ const Algorithm = (props) => {
         </Button>
         <Button
           style={{ width: '70px', height: '28px', padding: '0px',marginLeft:'20px' }}
-          onClick={calcAlgorithm4_11}
+          onClick={calcAlgorithm4_10_2}
           color={"primary"}
           size="sm"
           className="top-right-button"
