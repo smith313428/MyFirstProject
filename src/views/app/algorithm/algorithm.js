@@ -6720,8 +6720,8 @@ const Algorithm = (props) => {
               if (differenceFromLongTakedPosition<=restartVolume/2){
                 longTakePositions.push(priceData)
                 longAmount = longAmount - takeLossAmount
-                longLoss=longLoss  + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                // longLoss=longLoss  + (longTakePositions.length*restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                // longLoss=longLoss  + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLoss=longLoss  + (longTakePositions.length*restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
                 longLoss1 = longLoss1 + (longDifference)*((takeLossAmount)/priceData)
                 longLossIndex3 = longLossIndex3 +1
                 if (longAmount == 0 || longTakePositions.length == 2){
@@ -6739,8 +6739,8 @@ const Algorithm = (props) => {
                 // longTakePositions.push(longCurPosition + restartVolume/2)
                 longAmount = longAmount - takeLossAmount
                 takedLongLoss = true
-                longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                // longLoss=longLoss + (restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                // longLoss=longLoss + (longDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                longLoss=longLoss + (restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
                 longLoss2 = longLoss2  + (longDifference)*((takeLossAmount)/priceData)
                 longLossIndex4 = longLossIndex4 +1
 
@@ -6782,8 +6782,8 @@ const Algorithm = (props) => {
               if (differenceFromShortTakedPosition<=restartVolume/2){
                 shortTakePositions.push(priceData)
                 shortAmount = shortAmount - takeLossAmount
-                shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                // shortLoss=shortLoss +(shortTakePositions.length*restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                // shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss=shortLoss +(shortTakePositions.length*restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
                 shortLoss1=shortLoss1  +(shortDifference)*((takeLossAmount)/priceData)
                 shortLossIndex3 = shortLossIndex3 +1
                 if (shortAmount == 0 || shortTakePositions.length == 2){
@@ -6801,8 +6801,8 @@ const Algorithm = (props) => {
                 // shortTakePositions.push(shortCurPosition - restartVolume/2)
                 shortAmount = shortAmount - takeLossAmount
                 takedShortLoss = true
-                shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
-                // shortLoss=shortLoss +(restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                // shortLoss=shortLoss +(shortDifference)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
+                shortLoss=shortLoss +(restartVolume/2)*((takeLossAmount)/priceData) - (feePercent/2)*(takeLossAmount/priceData)
                 shortLoss2=shortLoss2  +(shortDifference)*((takeLossAmount)/priceData)
                 shortLossIndex4 = shortLossIndex4 +1
               }
