@@ -6536,7 +6536,7 @@ const Algorithm = (props) => {
                 isStartedLong = false
                 longLossIndex2 = longLossIndex2 +1
               }
-              // if(longStartPosition +200 < priceData){
+              // if(longStartPosition +200 < priceData) {
               //   longProfit=longProfit+(longDifference)*(longAmount/priceData)  - (feePercent/2)*(longAmount/priceData)
               //   isStartedLong = false
               //   longProfitIndex2 = longProfitIndex2 +1
