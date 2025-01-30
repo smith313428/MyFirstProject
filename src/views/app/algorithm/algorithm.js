@@ -7178,6 +7178,7 @@ const Algorithm = (props) => {
                 if (longAmount == 0 || longTakePositions.length == 5){
                   isStartedLong = false
                 }
+                console.log('longDifference===',longTakePositions.length, longDifference, longTakePositions.length*restartVolume/5, longDifference- longTakePositions.length*restartVolume/5)
               }
             }else{
               if(longDifference<=restartVolume/5){
@@ -7230,6 +7231,7 @@ const Algorithm = (props) => {
                 if (shortAmount == 0 || shortTakePositions.length == 5){
                   isStartedShort = false
                 }
+                console.log('shortDifference===',shortTakePositions.length,shortDifference, shortTakePositions.length*restartVolume/5, shortDifference - shortTakePositions.length*restartVolume/5)
               }
             }else{
               if(shortDifference<=restartVolume/5){
