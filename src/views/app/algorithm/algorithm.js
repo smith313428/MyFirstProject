@@ -1537,6 +1537,39 @@ import {
   data_24_12_30_5m,
   data_24_12_31_5m
 } from "../../../data/prices2024";
+import {
+  data_25_01_01_5m, 
+  data_25_01_02_5m, 
+  data_25_01_03_5m, 
+  data_25_01_04_5m, 
+  data_25_01_05_5m, 
+  data_25_01_06_5m, 
+  data_25_01_07_5m, 
+  data_25_01_08_5m, 
+  data_25_01_09_5m, 
+  data_25_01_10_5m, 
+  data_25_01_11_5m, 
+  data_25_01_12_5m, 
+  data_25_01_13_5m, 
+  data_25_01_14_5m, 
+  data_25_01_15_5m, 
+  data_25_01_16_5m, 
+  data_25_01_17_5m, 
+  data_25_01_18_5m, 
+  data_25_01_19_5m, 
+  data_25_01_20_5m, 
+  data_25_01_21_5m, 
+  data_25_01_22_5m, 
+  data_25_01_23_5m, 
+  data_25_01_24_5m, 
+  data_25_01_25_5m, 
+  data_25_01_26_5m, 
+  data_25_01_27_5m, 
+  data_25_01_28_5m, 
+  data_25_01_29_5m, 
+  data_25_01_30_5m,
+  data_25_01_31_5m,
+} from "../../../data/prices2025";
 
 const dataTempOld=data_21_6_1_22_7_30
 
@@ -3092,13 +3125,46 @@ const daysData_24_03_t=
   .concat(data_24_12_30_5m)
   .concat(data_24_12_31_5m)
 
+  const daysData_25_01_t=
+  data_25_01_01_5m
+  .concat(data_25_01_02_5m)
+  .concat(data_25_01_03_5m)
+  .concat(data_25_01_04_5m)
+  .concat(data_25_01_05_5m)
+  .concat(data_25_01_06_5m)
+  .concat(data_25_01_07_5m)
+  .concat(data_25_01_08_5m)
+  .concat(data_25_01_09_5m)
+  .concat(data_25_01_10_5m)
+  .concat(data_25_01_11_5m)
+  .concat(data_25_01_12_5m)
+  .concat(data_25_01_13_5m)
+  .concat(data_25_01_14_5m)
+  .concat(data_25_01_15_5m)
+  .concat(data_25_01_16_5m)
+  .concat(data_25_01_17_5m)
+  .concat(data_25_01_18_5m)
+  .concat(data_25_01_19_5m)
+  .concat(data_25_01_20_5m)
+  .concat(data_25_01_21_5m)
+  .concat(data_25_01_22_5m)
+  .concat(data_25_01_23_5m)
+  .concat(data_25_01_24_5m)
+  .concat(data_25_01_25_5m)
+  .concat(data_25_01_26_5m)
+  .concat(data_25_01_27_5m)
+  .concat(data_25_01_28_5m)
+  .concat(data_25_01_29_5m)
+  .concat(data_25_01_30_5m)
+  .concat(data_25_01_31_5m)
+
   
   const daysData_2021_01_2024_12_5m_temp = 
   daysData_21_01_t.concat(daysData_21_02_t).concat(daysData_21_03_t).concat(daysData_21_04_t).concat(daysData_21_05_t).concat(daysData_21_06_t).concat(daysData_21_07_t).concat(daysData_21_08_t).concat(daysData_21_09_t).concat(daysData_21_10_t).concat(daysData_21_11_t).concat(daysData_21_12_t)
   .concat(daysData_22_01_t).concat(daysData_22_02_t).concat(daysData_22_03_t).concat(daysData_22_04_t).concat(daysData_22_05_t).concat(daysData_22_06_t).concat(daysData_22_07_t).concat(daysData_22_08_t).concat(daysData_22_09_t).concat(daysData_22_10_t).concat(daysData_22_11_t).concat(daysData_22_12_t)
   .concat(daysData_23_01_t).concat(daysData_23_02_t).concat(daysData_23_03_t).concat(daysData_23_04_t).concat(daysData_23_05_t).concat(daysData_23_06_t).concat(daysData_23_07_t).concat(daysData_23_08_t).concat(daysData_23_09_t).concat(daysData_23_10_t).concat(daysData_23_11_t).concat(daysData_23_12_t)
   .concat(daysData_24_01_t).concat(daysData_24_02_t).concat(daysData_24_03_t).concat(daysData_24_04_t).concat(daysData_24_05_t).concat(daysData_24_06_t).concat(daysData_24_07_t).concat(daysData_24_08_t).concat(daysData_24_09_t).concat(daysData_24_10_t).concat(daysData_24_11_t).concat(daysData_24_12_t)
-
+  .concat(daysData_25_01_t)
   const daysData_2021_01_2024_12_5m = [daysData_2021_01_2024_12_5m_temp]
 
 const dataTemp=dataTempOld.reverse()
@@ -3193,9 +3259,9 @@ const Algorithm = (props) => {
   const [stopProfitVolume, setStopProfitVolume] = useState(500)
   const [priceVolume2, setPriceVolume2] = useState(300)
   const [lossLimit, setlossLimit] = useState(20000)
-  const [profit, setProfit] = useState(200) //300 : 9
+  const [profit, setProfit] = useState(300) //300 : 9
   const [invert, setInvert] = useState(300)
-  const [loss, setloss] = useState(500) //300 : 9
+  const [loss, setloss] = useState(600) //300 : 9
   const [selectionRange, setSelectionRange] = useState([{
     startDate: new Date(),
     endDate: new Date(),
@@ -7178,7 +7244,7 @@ const Algorithm = (props) => {
                 if (longAmount == 0 || longTakePositions.length == 5){
                   isStartedLong = false
                 }
-                console.log('longDifference===',longTakePositions.length, longDifference, longTakePositions.length*restartVolume/5, longDifference- longTakePositions.length*restartVolume/5)
+                // console.log('longDifference===',longTakePositions.length, longDifference, longTakePositions.length*restartVolume/5, longDifference- longTakePositions.length*restartVolume/5)
               }
             }else{
               if(longDifference<=restartVolume/5){
@@ -7231,7 +7297,7 @@ const Algorithm = (props) => {
                 if (shortAmount == 0 || shortTakePositions.length == 5){
                   isStartedShort = false
                 }
-                console.log('shortDifference===',shortTakePositions.length,shortDifference, shortTakePositions.length*restartVolume/5, shortDifference - shortTakePositions.length*restartVolume/5)
+                // console.log('shortDifference===',shortTakePositions.length,shortDifference, shortTakePositions.length*restartVolume/5, shortDifference - shortTakePositions.length*restartVolume/5)
               }
             }else{
               if(shortDifference<=restartVolume/5){
