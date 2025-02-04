@@ -7244,7 +7244,7 @@ const Algorithm = (props) => {
                 if (longAmount == 0 || longTakePositions.length == 5){
                   isStartedLong = false
                 }
-                // console.log('longDifference===',longTakePositions.length, longDifference, longTakePositions.length*restartVolume/5, longDifference- longTakePositions.length*restartVolume/5)
+                console.log('longDifference===',longTakePositions.length, longDifference, longTakePositions.length*restartVolume/5, longDifference- longTakePositions.length*restartVolume/5)
               }
             }else{
               if(longDifference<=restartVolume/5){
